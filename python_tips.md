@@ -1,6 +1,7 @@
 # python tips
 
-## tip1: insert->same index
+**tip1: insert->same index**
+
 ```python
 # Note: 2:2 should be the same, or it will be replaced
 num1 = [1,2,5]
