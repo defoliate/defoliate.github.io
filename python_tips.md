@@ -11,3 +11,8 @@ num2[2:3] = [3,4,[6],[]]#[1, 2, 3, 4, [6], []]
 print(num1)
 print(num2)
 ```
+**tip2: default input is 'str'**
+```python
+a = input()#23
+print(type(a))#<class 'str'>
+```
