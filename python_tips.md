@@ -16,3 +16,13 @@ print(num2)
 a = input()#23
 print(type(a))#<class 'str'>
 ```
+**tip3: x.sort()->change original& sorted(x)->don't**
+```python
+a = input()#1 2 4 3->str
+b = [int(i) for i in a.split()]#list
+c = sorted(b)
+print(c)#[1, 2, 3, 4]
+print(b)#[1, 2, 4, 3]
+b.sort()
+print(b)#[1, 2, 3, 4]
+```
