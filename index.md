@@ -4,4 +4,6 @@
 
 [python_insert](/python_tips.md)
 
+[python_exercise](/python_exercise.md)
+
 
