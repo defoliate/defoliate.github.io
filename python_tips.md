@@ -28,7 +28,7 @@ print(b)#[1, 2, 4, 3]
 b.sort()
 print(b)#[1, 2, 3, 4]
 ```
-**tip4: extract str->list('xxx')
+**tip4: extract str->list('xxx')**
 ```python
 alist = list('abcdefghijklmnopqrstuvwxyz')#['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 ```
