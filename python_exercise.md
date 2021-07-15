@@ -15,11 +15,9 @@ print(c)
 
 ```python
 def bSearch(arr, left, right, x):
-  left = 0
-  right = len(arr) - 1
   times = 0
+  
   # if the element doesn't exist,end it. if always 'True'->search forever 
- 
   while left <= right:
     times += 1
     mid = (left + right) // 2
