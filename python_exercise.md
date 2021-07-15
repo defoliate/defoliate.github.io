@@ -10,17 +10,16 @@ b = random.sample(a,8)
 c = ''.join(b)
 print(c)
 ```
+
 **ex2: binary search**
 
 ```python
 a = [1,2,3,4,5,8] 
-
 def search(x):
   left = 0
   right = len(a) - 1
   times = 0
   # if the element doesn't exist,end it. if always 'True'->search forever 
- 
   while left <= right:
     times += 1
     mid = (left + right) // 2
