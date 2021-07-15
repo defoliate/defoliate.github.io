@@ -11,7 +11,7 @@ c = ''.join(b)
 print(c)
 ```
 
-**ex2: binary search**
+**ex2: binary search, refer [GeeksforGeeks](https://www.geeksforgeeks.org/binary-search/)**
 
 ```python
 def bSearch(arr, left, right, x):
