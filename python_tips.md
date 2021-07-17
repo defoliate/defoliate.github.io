@@ -49,3 +49,9 @@ print([3,4,5,6,5,4,3].remove(3))#return None, cause we know remove it
 for i in range(10):
   pass
 ```
+
+**tip7: ,->space**
+
+```python
+print('acccccc','baaaaaa')# acccccc baaaaaa
+```
