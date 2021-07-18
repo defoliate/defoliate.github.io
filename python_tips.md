@@ -55,3 +55,39 @@ for i in range(10):
 ```python
 print('acccccc','baaaaaa')# acccccc baaaaaa
 ```
+
+**tip8: flask usage->page navigation**
+
+```python
+from flask import Flask
+# from flask import request
+
+app = Flask(__name__)
+
+@app.route('/', methods=['GET', 'POST'])
+def home():
+    str1 ='<a style="color:green" href="./second"><h1>go to the next page</h1></a>'
+    return str1
+
+@app.route('/second', methods=['GET', 'POST'])
+def home1():
+    str2 = '<a style="color:red" href="/"><h1>back to normal</h1></a>'
+    return str2
+
+if __name__ == '__main__':
+    app.run(host="localhost", port=8030, debug=True)
+```
+
+**tip9: Request lib->similar to JQuery->python a.py>te.csv**
+
+```python
+from requests_html import HTMLSession
+session = HTMLSession()
+url = 'https://catalog.oregonstate.edu/courses/cs/'
+r = session.get(url)
+# print(r.html.html)
+elementss = r.html.find('.courseblocktitle')
+print('courses OSU offered follows:')
+for el in elementss:
+	print(el.text)
+```
