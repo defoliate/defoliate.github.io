@@ -70,3 +70,33 @@ print(type(any_func)) # class 'function'
 print('~~~~~~')
 print(decorator(any_func())) # return the execute result,then return a 'function'
 ```
+
+**ex4: fib->recursive+dic**
+
+```python
+# ordinary method: recursive
+def fib(n):
+  if n == 0 or n == 1:
+    return n
+  else:
+    return fib(n - 1) + fib(n - 2)
+
+# memorize the previous result by dict->linear
+def fibm(n):
+  memo = {0:0, 1:1}
+  if n not in memo:
+    memo[n] = fibm(n - 1) + fibm(n - 2)
+  return memo[n]
+
+# only keep the latest->linear search
+def fibi(n):
+  old, new = 0, 1
+  if n == 0:
+    return 0
+  for i in range(n-1):
+    old, new = new, old + new
+  return new
+
+print([fibi(i) for i in range(10)])
+print('fib = {0}, fibm = {1}, fibi = {2} '.format(fib(10),fibm(10),fibi(10)))
+```
