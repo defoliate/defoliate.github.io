@@ -11,7 +11,7 @@ c = ''.join(b)
 print(c)
 ```
 
-**ex2: binary search, refer [GeeksforGeeks](https://www.geeksforgeeks.org/binary-search/)**
+**ex2: binary search, refer to [binary search](https://www.geeksforgeeks.org/binary-search/)**
 
 ```python
 def bSearch(arr, left, right, x):
@@ -33,4 +33,40 @@ def bSearch(arr, left, right, x):
 
 a = [1,2,3,4,5,8] 
 bSearch(a, 0, len(a)-1, 4)#times: 8->3,3->1,4->3
+```
+
+**ex3:decorator usage: pass a whole function object, refer to [args](https://www.geeksforgeeks.org/args-kwargs-python/) and [decorator](https://www.geeksforgeeks.org/decorators-in-python/)**
+
+```python
+def decorator(func):
+  # multiple parameters, *args stands for varible parameter,
+  # **kwargs stands for varible parameters with keywords
+  def partial_func(*args,**kwargs):    
+    print('func={0}:args={1},kwargs={2}'.format(func.__name__,args,kwargs))
+    func(*args,**kwargs)
+  return partial_func
+
+@decorator
+def some_func():
+  return print('someeee')
+
+@decorator
+def any_func(*args,**kwargs):
+  return print("anyyyy")
+
+# return the execute result
+# case1: no para. func=some_func:args=(),kwargs={}
+# someeee
+some_func()
+# equivalent
+decorator(some_func())
+# case 2: has paras. func=any_func:args=('aaa', 'bbb'),kwargs={'key1': 'ccc', 'key2': 'ddd'}
+# anyyyy
+any_func('aaa','bbb',key1='ccc',key2='ddd')
+
+# Note: 'function' itself is a type
+print('=====')
+print(type(any_func)) # class 'function'
+print('~~~~~~')
+print(decorator(any_func())) # return the execute result,then return a 'function'
 ```
