@@ -71,7 +71,7 @@ print('~~~~~~')
 print(decorator(any_func())) # return the execute result,then return a 'function'
 ```
 
-**ex4: fib->recursive+dic**
+**ex4: fib->recursive+dic, refer to [recursive function](https://www.python-course.eu/python3_recursive_functions.php)**
 
 ```python
 # ordinary method: recursive
@@ -90,9 +90,9 @@ def fibm(n):
 
 # only keep the latest->linear search
 def fibi(n):
-  old, new = 0, 1
   if n == 0:
     return 0
+  old, new = 0, 1
   for i in range(n-1):
     old, new = new, old + new
   return new
