@@ -35,7 +35,7 @@ There are screens on:
 b. 
 
 ```bash
-screen -r test # Retach[//]: <> (This is also a comment.)
+screen -r test # Retach [//]: <> (This is also a comment.)
 ```
 
 **Note:**
