@@ -47,9 +47,9 @@ sh train_Copy1.sh>>out16_5.txt # output into a new file, since sometimes one scr
 ```
 
 ```console
-screen -r test [//]: <> (This is also a comment.)
+screen -r test [//]: <> (This is also a comment.) aaaa
 ```
 
 ```bash
-screen -r test [//]: <> (This is also a comment.)
+screen -r test [//]: # (This is also a comment.) aaaaa
 ```
