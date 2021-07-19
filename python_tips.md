@@ -112,6 +112,12 @@ for el in elementss:
 >>> print(hex(16),bin(10)) # 0x10 0b1010,convert to hex and binary
 >>> abs(1-2j) # 2.23606797749979, it equals to sqrt(5)
 ```
+**tip11: refer to [increase recursion maximum] (https://stackoverflow.com/questions/3323001/what-is-the-maximum-recursion-depth-in-python-and-how-to-increase-it)**
+```python
+import sys
+print(sys.getrecursionlimit())
+sys.setrecursionlimit(1500)
+```
 **tip11: useful knowledge from <<Python程序设计(陈春晖)>>**
 
 1. Python3中的 字符串是 Unicode字符串而不是字节数组,这是与 Python2的主要差别之一。
