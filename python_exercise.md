@@ -102,6 +102,6 @@ def fibi(n):
     old, new = new, old + new
   return new
 
-print([fibi(i) for i in range(10)])
-print('fib = {0}, fibm = {1}, fibi = {2} '.format(fib(10),fibm(10),fibi(10)))
+print([fibi(i) for i in range(10)]) # [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+print(fib(9),fibm(9),fibi(9)) # 34 34 34
 ```
