@@ -55,12 +55,14 @@ def any_func(*args,**kwargs):
   return print("anyyyy")
 
 # return the execute result
-# case1: no para. func=some_func:args=(),kwargs={}
+# case1: no para
+# func=some_func:args=(),kwargs={}
 # someeee
 some_func()
 # equivalent
 decorator(some_func())
-# case 2: has paras. func=any_func:args=('aaa', 'bbb'),kwargs={'key1': 'ccc', 'key2': 'ddd'}
+# case 2: has paras. 
+# func=any_func:args=('aaa', 'bbb'),kwargs={'key1': 'ccc', 'key2': 'ddd'}
 # anyyyy
 any_func('aaa','bbb',key1='ccc',key2='ddd')
 
@@ -68,7 +70,7 @@ any_func('aaa','bbb',key1='ccc',key2='ddd')
 print('=====')
 print(type(any_func)) # class 'function'
 print('~~~~~~')
-print(decorator(any_func())) # return the execute result,then return a 'function'
+print(decorator(any_func())) # return the execute result + a 'function'
 ```
 
 **ex4: fib->recursive+dic, refer to [recursive function](https://www.python-course.eu/python3_recursive_functions.php)**
