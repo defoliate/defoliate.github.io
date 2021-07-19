@@ -1,4 +1,4 @@
-# python tips
+# python tips1
 
 **tip1: insert->same index**
 
