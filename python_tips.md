@@ -100,9 +100,9 @@ for el in elementss:
 ```python
 # Round function:
 # Normally, it keeps the nearest number. e.g. round(2.67,1)#2.7
-# However, it performs different in python2 and python3 when there’re equal distance
-# It keeps the longer distance from 0 in python 2, eg. round(0.5)#1, 
-# but rounding is done toward the even choice in python3. e.g.round(0.5) #0 
+# However, it performs different in python2 and 3 when there’re equal distance
+# It keeps the longer distance from 0 in py 2, eg. round(0.5)#1, 
+# but rounding is done toward the even choice in py3. e.g.round(0.5) #0 
 >>> round(2.6845,3) # 2.684
 >>> round(2.6855,3) # 2.686
 >>> round(123.84) # 124
