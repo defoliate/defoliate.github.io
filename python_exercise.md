@@ -4,7 +4,10 @@
 
 ```python
 import random
-a = [chr(i) for i in range(65,91)] + [chr(i) for i in range(97,123)] + [str(i) for i in range(0,10)]
+a1 = [chr(i) for i in range(65,91)] # capital A-Z
+a2 = [chr(i) for i in range(97,123)] # a - z
+a3 = [str(i) for i in range(0,10)] # 0-9
+a = a1 + a2 + a3
 random.shuffle(a)
 b = random.sample(a,8)
 c = ''.join(b)
@@ -39,7 +42,7 @@ bSearch(a, 0, len(a)-1, 4)#times: 8->3,3->1,4->3
 
 ```python
 def decorator(func):
-  # multiple parameters, *args stands for varible parameter,
+  # *args stands for varible parameter without keywords
   # **kwargs stands for varible parameters with keywords
   def partial_func(*args,**kwargs):    
     print('func={0}:args={1},kwargs={2}'.format(func.__name__,args,kwargs))
