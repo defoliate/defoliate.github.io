@@ -9,12 +9,12 @@ tar -czvf file.tar.gz HW1
 
 a. Give a screen a name:
 
-```console
+```bash
 screen -S test # case sensitive
 ```
 b. In the current screen. Hold control, then a+d orderly. It succeed when showing below:
 
-```console
+```bash
 [detached from 12306.test]
 ```
 
@@ -22,7 +22,7 @@ b. In the current screen. Hold control, then a+d orderly. It succeed when showin
 
 a.
 
-```console
+```bash
 screen -ls
 (base) pelican03 ~ 1001$ screen -ls
 There are screens on:
@@ -33,12 +33,14 @@ There are screens on:
 4 Sockets in /var/run/screen/S-yuanqi.
 ```
 b. 
-```console
+
+```bash
 screen -r test # Retach
 ```
 
 **Note:**
-```console
+
+```bash
 Kill -9 12306 # kill thread
 screen -wipe # clean screen
 sh train_Copy1.sh>>out16_5.txt # output into a new file, since sometimes one screen is not big enough
