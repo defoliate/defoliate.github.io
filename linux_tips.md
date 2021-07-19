@@ -45,3 +45,11 @@ Kill -9 12306 # kill thread
 screen -wipe # clean screen
 sh train_Copy1.sh>>out16_5.txt # output into a new file, since sometimes one screen is not big enough
 ```
+
+```console
+screen -r test [//]: <> (This is also a comment.)
+```
+
+```bash
+screen -r test [//]: <> (This is also a comment.)
+```
