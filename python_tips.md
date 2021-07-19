@@ -45,7 +45,7 @@ alist = list('abc') #['a', 'b', 'c']
 **tip5: list.remove()->none**
 
 ```python
-print([3,4,5,6,5,4,3].remove(3))#return None, cause we know remove it
+print([3,4,5,6,5,4,3].remove(3)) #return None, since we know remove it
 ```
 
 **tip6: blank segment without error->pass**
