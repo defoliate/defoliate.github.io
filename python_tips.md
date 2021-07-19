@@ -93,7 +93,7 @@ for el in elementss:
 	print(el.text)
 ```
 
-**tip10: round hole->python2/3 difference, refer to [hole](https://www.runoob.com/w3cnote/python-round-func-note.html)**
+**tip10: round function perform differently in python2/3, refer to [hole](https://www.runoob.com/w3cnote/python-round-func-note.html)**
 
 ```python
 # Round function:
