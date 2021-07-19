@@ -1,5 +1,5 @@
 **tip1: Zip files:**
-```console
+```bash
 tar -czvf file.tar.gz HW1
 ```
 
@@ -35,7 +35,7 @@ There are screens on:
 b. 
 
 ```bash
-screen -r test # Retach [//]: <> (This is also a comment.)
+screen -r test # Retach 
 ```
 
 **Note:**
@@ -44,12 +44,4 @@ screen -r test # Retach [//]: <> (This is also a comment.)
 Kill -9 12306 # kill thread
 screen -wipe # clean screen
 sh train_Copy1.sh>>out16_5.txt # output into a new file, since sometimes one screen is not big enough
-```
-
-```console
-screen -r test [//]: <> (This is also a comment.) aaaa
-```
-
-```bash
-screen -r test [//]: # (This is also a comment.) aaaaa
 ```
