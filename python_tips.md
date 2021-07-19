@@ -39,7 +39,7 @@ print(b) # [1, 2, 3, 4]
 **tip4: extract str->list('xxx')**
 
 ```python
-alist = list('abcdefghijklmnopqrstuvwxyz')#['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+alist = list('abc') #['a', 'b', 'c']
 ```
 
 **tip5: list.remove()->none**
@@ -67,16 +67,18 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    str1 ='<a style="color:green" href="./second"><h1>go to the next page</h1></a>'
+    str1 ='<a style="color:green" href="./second">\
+    <h1>go to the next page</h1></a>'
     return str1
 
 @app.route('/second', methods=['GET', 'POST'])
 def home1():
-    str2 = '<a style="color:red" href="/"><h1>back to normal</h1></a>'
+    str2 = '<a style="color:red" href="/">\
+    <h1>back to normal</h1></a>'
     return str2
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=8030, debug=True)
+    app.run(host="localhost", port=8000, debug=True)
 ```
 
 **tip9: Request lib->similar to JQuery->python a.py>te.csv**
@@ -97,9 +99,10 @@ for el in elementss:
 
 ```python
 # Round function:
-# Normally, it keeps the nearest number. e.g. round(2.67,1)#2.7, but it performs different in python2 and python3. 
-# If there’re equal distance. It keeps the longer distance from 0 in python 2, eg. round(0.5)#1. 
-# However, rounding is done toward the even choice in python3. e.g.round(0.5)#0, 
+# Normally, it keeps the nearest number. e.g. round(2.67,1)#2.7
+# However, it performs different in python2 and python3 when there’re equal distance
+# It keeps the longer distance from 0 in python 2, eg. round(0.5)#1, 
+# but rounding is done toward the even choice in python3. e.g.round(0.5) #0 
 >>> round(2.6845,3) # 2.684
 >>> round(2.6855,3) # 2.686
 >>> round(123.84) # 124
