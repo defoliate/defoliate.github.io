@@ -91,3 +91,19 @@ print('courses OSU offered follows:')
 for el in elementss:
 	print(el.text)
 ```
+
+**tip10: round hole->python2/3 difference, refer to [hole](https://www.runoob.com/w3cnote/python-round-func-note.html)**
+```python
+# Round function:
+# Normally, it keeps the nearest number. e.g. round(2.67,1)#2.7, but it performs different in python2 and python3. 
+# If there’re equal distance. It keeps the longer distance from 0 in python 2, eg. round(0.5)#1. 
+# However, rounding is done toward the even choice in python3. e.g.round(0.5)#0, 
+>>> round(2.6845,3) # 2.684
+>>> round(2.6855,3) # 2.686
+>>> round(123.84) # 124
+>>> round(123.84,-2) # 100.0, float, not 100
+>>> math.floor(15.5) # 15
+>>> print(int("20",16),int("101",2)) # 32 5,Hexadecimal and binary
+>>> print(hex(16),bin(10)) # 0x10 0b1010,convert to hex and binary
+>>> abs(1-2j) # 2.23606797749979, it equals to sqrt(5)
+```
