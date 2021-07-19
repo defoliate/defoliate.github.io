@@ -19,8 +19,6 @@ print(c)
 ```python
 def bSearch(arr, left, right, x):
   times = 0
-  
-  # if the element doesn't exist,end it. if always 'True'->search forever 
   while left <= right:
     times += 1
     mid = (left + right) // 2
@@ -31,6 +29,7 @@ def bSearch(arr, left, right, x):
     else: # x == a[mid]
       print('find it, the position is in {0},times={1}'.format(mid,times))
       break # end key
+  # element doesn't exist ->end it
   else:
     print('the element is not exist.')
 
@@ -64,12 +63,13 @@ def any_func(*args,**kwargs):
 some_func()
 # equivalent
 decorator(some_func())
+
 # case 2: has paras. 
 # func=any_func:args=('aaa', 'bbb'),kwargs={'key1': 'ccc', 'key2': 'ddd'}
 # anyyyy
 any_func('aaa','bbb',key1='ccc',key2='ddd')
 
-# Note: 'function' itself is a type
+# 'function' itself is a type
 print('=====')
 print(type(any_func)) # class 'function'
 print('~~~~~~')
@@ -79,21 +79,21 @@ print(decorator(any_func())) # return the execute result + a 'function'
 **ex4: fib->recursive+dic, refer to [recursive function](https://www.python-course.eu/python3_recursive_functions.php)**
 
 ```python
-# ordinary method: recursive
+# ordinary method: recursive, lowest
 def fib(n):
   if n == 0 or n == 1:
     return n
   else:
     return fib(n - 1) + fib(n - 2)
 
-# memorize the previous result by dict->linear
+# memorize the previous result by dict->linear, fastest
 def fibm(n):
   memo = {0:0, 1:1}
   if n not in memo:
     memo[n] = fibm(n - 1) + fibm(n - 2)
   return memo[n]
 
-# only keep the latest->linear search
+# keep the latest only ->linear search, faster
 def fibi(n):
   if n == 0:
     return 0
