@@ -9,12 +9,12 @@ tar -czvf file.tar.gz HW1
 
 a. Give a screen a name:
 
-```console
+```bash
 screen -S test ' case sensitive '
 ```
 b. In the current screen. Hold control, then a+d orderly. It succeed when showing below:
 
-```console
+```bash
 [detached from 12306.test]
 ```
 
@@ -22,7 +22,7 @@ b. In the current screen. Hold control, then a+d orderly. It succeed when showin
 
 a.
 
-```console
+```bash
 screen -ls
 (base) pelican03 ~ 1001$ screen -ls
 There are screens on:
