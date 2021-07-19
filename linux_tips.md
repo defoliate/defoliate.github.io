@@ -34,12 +34,12 @@ There are screens on:
 ```
 b. 
 ```console
-screen -r test ' Retach '
+screen -r test 'Retach'
 ```
 
 **Note:**
 ```console
-Kill -9 12306 ' kill thread '
-screen -wipe ' clean screen '
+Kill -9 12306 'kill thread'
+screen -wipe 'clean screen'
 sh train_Copy1.sh>>out16_5.txt ' output into a new file, since sometimes one screen is not big enough '
 ```
