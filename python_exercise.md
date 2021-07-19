@@ -35,7 +35,7 @@ a = [1,2,3,4,5,8]
 bSearch(a, 0, len(a)-1, 4)#times: 8->3,3->1,4->3
 ```
 
-**ex3:decorator usage: pass a whole function object, refer to [args](https://www.geeksforgeeks.org/args-kwargs-python/) and [decorator](https://www.geeksforgeeks.org/decorators-in-python/)**
+**ex3: decorator usage: pass a whole function object, refer to [args](https://www.geeksforgeeks.org/args-kwargs-python/) and [decorator](https://www.geeksforgeeks.org/decorators-in-python/)**
 
 ```python
 def decorator(func):
