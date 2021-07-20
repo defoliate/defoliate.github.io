@@ -119,7 +119,15 @@ import sys
 print(sys.getrecursionlimit())
 sys.setrecursionlimit(1500)
 ```
-**tip12: useful knowledge from <<Python程序设计(陈春晖)>>**
+
+**tip12: para 'setup' is important->mesure a specific code segment, refer to [timer] (https://docs.python.org/3/library/timeit.html)**
+
+```python
+import timeit
+timeit.timeit(stmt="fibi(" + str(10) + ")", setup="from tstt import fibi", number = 30)
+```
+
+**tip13: useful knowledge from <<Python程序设计(陈春晖)>>**
 
 1. Python3中的 字符串是 Unicode字符串而不是字节数组,这是与 Python2的主要差别之一。
 
