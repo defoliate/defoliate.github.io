@@ -121,7 +121,7 @@ import timeit
 print(sys.getrecursionlimit())
 sys.setrecursionlimit(1500)
 # segment setup
-timeit.timeit(stmt="fibi(" + str(10) + ")", setup="from tstt import fibi", number = 30)
+timeit.timeit(stmt="fibi(10)", setup="from tstt import fibi", number = 30)
 ```
 
 **tip12: useful knowledge from <<Python程序设计(陈春晖)>>**
