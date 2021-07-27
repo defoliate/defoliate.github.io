@@ -131,12 +131,14 @@ timeit.timeit(stmt="fibi(10)", setup="from tstt import fibi", number = 30)
 2. “.”表示当前路径,在通常情况下可以省略,只有在特殊情况下才不能省略。
 e.g. .\system32\cmd.exe
 
-3. 从软件工程角 度来看,只有在高级语言不能满足设计要求,或不具备支持某种特定功能的技术性能 (如特殊的输入输出)时,汇编语言才被使用。
-
 4. 3个十分经典的科学计算扩展 库:NumPy、Pandas和 Matplotlib,它们分别为Python语言提供了快速数组处理、数值运算 以及绘图功能。
 
 5. python不支持的数据类型是char 、byte类型。Python没有char或byte类型来保存单一字符或 8 比特整数。你可以使用长度为 1 的字符串表示字符或 8 比特整数。
 python的数据类型有：数字(int)、浮点(float)、字符串(str)，列表(list)、元组(tuple)、字典(dict)、集合(set)
 
 6. C语言中字符串使用'\0'作为结束符，以防止越界。但是在python中，不是, 不需要为是否已经添加终止符而担心。字符串值包含你所定义的东西，没别的。
+
+**tip13: @staticmethod->build-in method**
+
+There's also a default [self](https://stackoverflow.com/questions/23944657/typeerror-method-takes-1-positional-argument-but-2-were-given) in each class function
 
