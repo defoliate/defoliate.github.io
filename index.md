@@ -1,7 +1,6 @@
 # Yuanqi's blog
 
 
-
 [python_tips](/python_tips.md)
 
 [C++_tips](/C++_tips)
@@ -10,4 +9,7 @@
 
 [linux_tips](/linux_tips.md)
 
-[Markdown Guide](https://guides.github.com/features/mastering-markdown/)
+[Markdown Guide](https://guides.github.com/features/mastering-markdown/) - [x] <span style='color:red'>(HTML in github)<span>
+  
+  - [x] HTML support
+
