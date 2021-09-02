@@ -9,5 +9,5 @@
 
 [linux_tips](/linux_tips.md)
 
-[Markdown Guide](https://guides.github.com/features/mastering-markdown/) <span style='color:#b8b8b8'>(HTML supportted in github)</span>
+[Markdown Guide](https://guides.github.com/features/mastering-markdown/) <span style='color:#b7b7b7'>(HTML supported in github)</span>
 
