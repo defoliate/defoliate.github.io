@@ -1,12 +1,12 @@
 
 ## linux tips ##
 
-**tip1: Zip files:**
+**tip: Zip files:**
 ```bash
 tar -czvf file.tar.gz HW1
 ```
 
-**tip2: detach screen, refer to [screen command](https://blog.csdn.net/C_chuxin/article/details/84328644) and [screen back](https://blog.csdn.net/hejunqing14/article/details/50338161)**
+**tip: detach screen, refer to [screen command](https://blog.csdn.net/C_chuxin/article/details/84328644) and [screen back](https://blog.csdn.net/hejunqing14/article/details/50338161)**
 
 *Detach step:*
 
