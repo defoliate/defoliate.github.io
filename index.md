@@ -3,7 +3,9 @@
 
 [python_tips](/python_tips.md)
 
-[C++_tips](/C++_tips)
+[C++_tips](/C++_tips.md)
+
+[C++_exercise](/C++_exercise.md)
 
 [python_exercise](/python_exercise.md)
 
