@@ -1,4 +1,4 @@
-## programming exercise
+## Python exercise
 
 **ex1: generate random 8 passcode**
 
