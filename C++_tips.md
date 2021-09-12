@@ -1,4 +1,4 @@
-## tips list
+## tip list
 
 **build in data types**
 
