@@ -19,3 +19,22 @@ int main() {
  return 0;
 }
 ```
+**pointer->dereference the address and get the value from it**
+```C++
+#include <iostream>
+using namespace std;
+
+//dereference the value of the address
+void comput_sum(int a, int b, int* s){
+    //operate the value directly
+    *s = a + b;
+}
+
+//in C++, must return a int
+int main(){
+    int x = 2, y = 3, sum =0;
+    comput_sum(x,y,&sum);//pass the address
+    cout<<sum<<endl;
+    //0->successful to the OS,1->some error
+    return 0;
+}
