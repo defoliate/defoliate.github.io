@@ -2,13 +2,12 @@
 
 **pass by reference**
 ```C++
-//get the address of the third value, not necessary same name(s,a)
+// get the address of the third value, not necessary same name(s,a)
 void comput_sum(int a, int b, int& s){
     //operate the value in the "box"
     s = a + b;
 }
 
-//in C++, must return a int
 int main(){
     int x = 2, y = 3, a =0;
     //pass the reference<-decided by the receive func comput_sum(int,int,int&)
