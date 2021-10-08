@@ -40,7 +40,8 @@ int main(){
 **pass by Reference and Pointer difference**
 ```C++
 int main(void){
-//Reference: must be declared and initialize same time.
+// Reference: just an alias of some variable(permanent),
+// must be declared and initialize same time.
 int s=10;
 //r is the alias of s->have been initialized after declared
 int& r=s;
@@ -50,7 +51,8 @@ int t=r;
 //int r= 11; error->can't be alias to others
 cout<<"Reference sample:\n"<<r<<","<<s<<","<<t<<endl;
 
-//Pointer can be declared first and initialized later.
+// Pointer:stores address of some variable,changa content of address anytime
+// can be declared first and initialized later.
 int* p;//not initialized
 p= &s;//p is the pointer,not *p->the value of the pointer
 cout<<"Pointer sample:\n"<<*p;
