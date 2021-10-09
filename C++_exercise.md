@@ -43,18 +43,22 @@ int main(void){
 // Reference: just an alias of some variable(permanent),
 // must be declared and initialize same time.
 int s=10;
-//r is the alias of s->have been initialized after declared
+//a. data type: alias, r->the alias of s, have to initialize after declared
 int& r=s;
 s = 101;
-//can be pass
+//can be passed since it just an alias
 int t=r;
 //int r= 11; error->can't be alias to others
+
 cout<<"Reference sample:\n"<<r<<","<<s<<","<<t<<endl;
+//b. & could also be operator->e.g. "address of" r
+cout<<&r<<endl;
 
 // Pointer:stores address of some variable,changa content of address anytime
-// can be declared first and initialized later.
+// a.can be declared first and initialized later.
 int* p;//not initialized
 p= &s;//p is the pointer,not *p->the value of the pointer
+//*p->access the memory address and get the "value of" p
 cout<<"Pointer sample:\n"<<*p;
 }
 ```
