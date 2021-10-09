@@ -58,7 +58,7 @@ cout<<&r<<endl;
 // a.can be declared first and initialized later.
 int* p;//not initialized
 p= &s;//p is the pointer,not *p->the value of the pointer
-//*p->access the memory address and get the "value of" p
+//* could be operator->e.g.*p->get the "value of" the memory address p
 cout<<"Pointer sample:\n"<<*p;
 }
 ```
