@@ -51,14 +51,14 @@ int t=r;
 //int r= 11; error->can't be alias to others
 
 cout<<"Reference sample:\n"<<r<<","<<s<<","<<t<<endl;
-//b. & could also be operator->e.g. "address of" r
+//b. & could also be an operator->e.g. "address of" r
 cout<<&r<<endl;
 
 // Pointer:stores address of some variable,changa content of address anytime
 // a.can be declared first and initialized later.
 int* p;//not initialized
 p= &s;//p is the pointer,not *p->the value of the pointer
-//* could be operator->e.g.*p->get the "value of" the memory address p
+//b. * could also be an operator->e.g. get the "value of" the memory address p
 cout<<"Pointer sample:\n"<<*p;
 }
 ```
