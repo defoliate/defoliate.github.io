@@ -18,3 +18,17 @@ int main(void)
 ```C++
 int* p = NULL;
 ```
+**Static and Dynamic memory**
+```C++
+int main(void){
+// Static: copy address
+int *k =NULL,j=2;
+k=&j;
+cout<<*k<<endl;
+// Dynamic: "create" the address space->new
+int *i= new int;
+*i = 2;
+cout<<*i;
+delete i;
+}
+```
