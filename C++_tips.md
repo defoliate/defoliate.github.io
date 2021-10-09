@@ -29,6 +29,6 @@ cout<<*k<<endl;
 int *i= new int;
 *i = 2;
 cout<<*i;
-delete i;
+delete i;//delete the memory the pointer points to, not the pointer itself
 }
 ```
