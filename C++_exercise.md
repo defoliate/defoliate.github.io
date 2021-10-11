@@ -55,7 +55,7 @@ cout<<"Reference sample:\n"<<r<<","<<s<<","<<t<<endl;
 cout<<&r<<endl;
 
 // Pointer:stores address of some variable,changa content of address anytime
-// a.can be declared first and initialized later.
+// a. can be declared first and initialized later->store address
 int* p;//not initialized
 p= &s;//p is the pointer,not *p->the value of the pointer
 //b. * could also be an operator->e.g. get the "value of" the memory address p
