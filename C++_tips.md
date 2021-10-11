@@ -32,3 +32,11 @@ cout<<*i;
 delete i;//delete the memory the pointer points to, not the pointer itself
 }
 ```
+**Array: ordered arrangement of similar items**
+
+**C-style string->char end with null**
+```C
+//code are equal below
+char name[5] = {'L', 'u', 'c', 'y', '\0'};
+char name[5] = {"Lucy"}; 
+```
