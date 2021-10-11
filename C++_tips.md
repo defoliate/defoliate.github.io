@@ -40,3 +40,4 @@ delete i;//delete the memory the pointer points to, not the pointer itself
 char name[5] = {'L', 'u', 'c', 'y', '\0'};
 char name[5] = {"Lucy"}; 
 ```
+**delete->deallocates single, delete[] ->[free array](https://stackoverflow.com/questions/2425728/delete-vs-delete-operators-in-c)**
