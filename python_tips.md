@@ -24,40 +24,9 @@ print(type(a)) # <class 'str'>, default input is 'str'
 print('acccccc','baaaaaa')# ','->space**, result: acccccc baaaaaa
 ```
 
-**tip3: x.sort()->change original & sorted(x)->don't**
+**tip3: multiple command end: double return**
 
-```python
-a = input()#1 2 4 3->str
-b = [int(i) for i in a.split()]#list
-c = sorted(b)
-print(c) # [1, 2, 3, 4]
-print(b) # [1, 2, 4, 3]
-b.sort()
-print(b) # [1, 2, 3, 4]
-```
-
-**tip4: extract str->list('xxx')**
-
-```python
-alist = list('abc') #['a', 'b', 'c']
-```
-
-**tip5: list.remove()->none**
-
-```python
-print([3,4,5,6,5,4,3].remove(3)) #return None, since we know remove it
-```
-
-**tip6: blank segment without error->pass**
-
-```python
-for i in range(10):
-  pass
-```
-
-**tip7: multiple command end: double return**
-
-**tip8: flask usage->page navigation**
+**tip4: flask usage->page navigation**
 
 ```python
 from flask import Flask
@@ -81,7 +50,13 @@ if __name__ == '__main__':
     app.run(host="localhost", port=8000, debug=True)
 ```
 
-**tip9: Request lib->similar to JQuery->python a.py>te.csv**
+**tip5: list.remove()->none**
+
+```python
+print([3,4,5,6,5,4,3].remove(3)) #return None, since we know remove it
+```
+
+**tip6: Request lib->similar to JQuery->python a.py>te.csv**
 
 ```python
 from requests_html import HTMLSession
@@ -95,7 +70,7 @@ for el in elementss:
 	print(el.text)
 ```
 
-**tip10: round function perform differently in python2/3, refer to [hole](https://www.runoob.com/w3cnote/python-round-func-note.html)**
+**tip7: round function perform differently in python2/3, refer to [hole](https://www.runoob.com/w3cnote/python-round-func-note.html)**
 
 ```python
 # Round function:
@@ -112,7 +87,7 @@ for el in elementss:
 >>> print(hex(16),bin(10)) # 0x10 0b1010,convert to hex and binary
 >>> abs(1-2j) # 2.23606797749979, it equals to sqrt(5)
 ```
-**tip11: [increase recursion maximum](https://stackoverflow.com/questions/3323001/what-is-the-maximum-recursion-depth-in-python-and-how-to-increase-it) and ['setup' segment](https://docs.python.org/3/library/timeit.html)**
+**tip8: [increase recursion maximum](https://stackoverflow.com/questions/3323001/what-is-the-maximum-recursion-depth-in-python-and-how-to-increase-it) and ['setup' segment](https://docs.python.org/3/library/timeit.html)**
 
 ```python
 import sys
@@ -124,7 +99,7 @@ sys.setrecursionlimit(1500)
 timeit.timeit(stmt="fibi(10)", setup="from tstt import fibi", number = 30)
 ```
 
-**tip12: useful knowledge from <<Python程序设计(陈春晖)>>**
+**tip9: useful knowledge from <<Python程序设计(陈春晖)>>**
 
 1. Python3中的 字符串是 Unicode字符串而不是字节数组,这是与 Python2的主要差别之一。
 
@@ -133,12 +108,9 @@ e.g. .\system32\cmd.exe
 
 4. 3个十分经典的科学计算扩展 库:NumPy、Pandas和 Matplotlib,它们分别为Python语言提供了快速数组处理、数值运算 以及绘图功能。
 
-5. python不支持的数据类型是char 、byte类型。Python没有char或byte类型来保存单一字符或 8 比特整数。你可以使用长度为 1 的字符串表示字符或 8 比特整数。
-python的数据类型有：数字(int)、浮点(float)、字符串(str)，列表(list)、元组(tuple)、字典(dict)、集合(set)
+5. python不支持的数据类型是char 、byte类型。python的数据类型有：数字(int)、浮点(float)、字符串(str)，列表(list)、元组(tuple)、字典(dict)、集合(set)
 
-6. C语言中字符串使用'\0'作为结束符，以防止越界。但是在python中，不是, 不需要为是否已经添加终止符而担心。字符串值包含你所定义的东西，没别的。
-
-**tip13: @staticmethod->build-in method**
+**tip10: @staticmethod->build-in method**
 
 There's also a default [self](https://stackoverflow.com/questions/23944657/typeerror-method-takes-1-positional-argument-but-2-were-given) in each class function
 
