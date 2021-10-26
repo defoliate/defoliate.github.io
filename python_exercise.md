@@ -105,3 +105,16 @@ def fibi(n):
 print([fibi(i) for i in range(10)]) # [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 print(fib(9),fibm(9),fibi(9)) # 34 34 34
 ```
+
+**ex5: Readfile**
+```python
+def readfile(filename):
+    numlist = []
+    g = open(filename, "r")
+    for line in g:
+        temp = line.split(',')
+        for num in temp:
+            numlist.append(int(num))
+    g.close()
+    return numlist
+```
