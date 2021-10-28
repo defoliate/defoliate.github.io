@@ -1,6 +1,6 @@
 The projects below shows the MAJOR programming language I used only. 
 
-## Web Developer skill
+## Web Developer skills
 
 [WAP](https://mo.sci99.com!): jQuery/Javascript/CSS/HTML, Git
 
