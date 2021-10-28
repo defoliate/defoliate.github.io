@@ -28,4 +28,4 @@ Computer Vision: Linux, Python, Jupyter Notebook, PyTorch, TensorFlow, Matplotli
 
 *other languages*
 
-Raku, Ruby, Racket, Prolog, Visual Basic, .NET, SQL: [Contact me](mailto:yuanqingxiao@outlook.com)
+Raku, Ruby, Racket, Prolog, Visual Basic, .NET, SQL: [Contact me](mailto:yuanqingxiao@gmail.com)
