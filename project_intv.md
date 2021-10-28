@@ -24,7 +24,7 @@ Windows 8/10 APP (no longer available in Windows 8/10 store->business reason): C
 
 **Artificial Intelligence**
 
-Computer Vision: Linux, Python, Jupyter Notebook, PyTorch, TensorFlow, Matplotlib, NumPy, Git
+[Computer Vision:](https://github.com/osuyuanqi/CS537) Linux, Python, Jupyter Notebook, PyTorch, TensorFlow, Matplotlib, NumPy, Git
 
 *other languages*
 
