@@ -8,7 +8,7 @@ The projects below shows the MAJOR programming language I used only.
 
 [CourseSelection:](https://github.com/osuyuanqi/CS565/blob/master/courseVueEdi.html) Vue, jQuery, Javascript, CSS/HTML, Git
 
-[WINDOWS PHONE 10 Apps:](https://bit.ly/3osi9tc) C#/XAML, Git
+[Zhuochuang Agriculture:](https://bit.ly/3osi9tc) C#/XAML, Git
 
 ### UX/UI Design skills
 
