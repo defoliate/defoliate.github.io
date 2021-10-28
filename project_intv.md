@@ -5,6 +5,6 @@
 programming language used: C++
 
 
-*parallel programming*
-https://github.com/osuyuanqi/CS575
+*[parallel programming](https://github.com/osuyuanqi/CS575)*
+
 programming language used: C++,C,Cuda,Shell,Python
