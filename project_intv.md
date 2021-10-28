@@ -4,23 +4,31 @@ The projects below shows the MAJOR programming language I used only.
 
 ### Web Developer skills
 
-[WAP](https://mo.sci99.com): jQuery, Javascript, CSS/HTML, Git
+[WAP:](https://mo.sci99.com) jQuery, Javascript, CSS/HTML, Git
 
-[CourseSelection](https://github.com/osuyuanqi/CS565/blob/master/courseVueEdi.html): Vue, jQuery, Javascript, CSS/HTML, Git
+[CourseSelection:](https://github.com/osuyuanqi/CS565/blob/master/courseVueEdi.html) Vue, jQuery, Javascript, CSS/HTML, Git
 
-[Windows Phone 10 apps](https://bit.ly/3osi9tc): C#/XAML, Git
+[WINDOWS PHONE 10 Apps:](https://bit.ly/3osi9tc) C#/XAML, Git
+
+### UX/UI Design skills
+
+[Discord Desktop App:](https://github.com/osuyuanqi/CS565/blob/master/565HW2_HeuEval.pdf) Heuristic Evaluation redesign practice
+
+[Persona:](https://github.com/osuyuanqi/CS565/blob/master/Persona.pdf) Figma
+
+[AllTrails Route Optimization](https://github.com/osuyuanqi/CS565/blob/master/Project%207.%20FInal%20Report.pdf)
 
 ### Software Developer skills
 
 **Computer Graphics**
 
-*Shader skill:* [wave simulation](https://media.oregonstate.edu/media/t/1_691hlz8u): C++, Git
+*Shader skill:* [wave simulation](https://media.oregonstate.edu/media/t/1_691hlz8u) C++, Git
 
-*Vulkan:* [windmill](https://media.oregonstate.edu/media/t/0_vfdrmvbe): Vulkan, Git
+*Vulkan:* [windmill](https://media.oregonstate.edu/media/t/0_vfdrmvbe) Vulkan, Git
 
-*[parallel programming](https://github.com/osuyuanqi/CS575):* C++, C, CUDA, Shell, Python, OpenCL, OpenGL, Git
+*[parallel programming:](https://github.com/osuyuanqi/CS575)* C++, C, CUDA, Shell, Python, OpenCL, OpenGL, Git
 
-Windows 8/10 APP (no longer available in Windows 8/10 store->business reason): C#, SVN, TFS, Git
+WINDOWS 10 APP (no longer available in store->business reason): C#, SVN, TFS, Git
 
 **Artificial Intelligence**
 
