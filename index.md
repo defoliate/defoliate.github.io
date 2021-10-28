@@ -1,5 +1,6 @@
 # Yuanqi's blog
 
+[project videos](/project_intv.md)<span style='color:#ff0000'>(for interviewers)</span>
 
 [C++_tips](/C++_tips.md)
 
