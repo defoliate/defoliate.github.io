@@ -12,11 +12,11 @@ The projects below shows the MAJOR programming language I used only.
 
 ### UX/UI Design skills
 
-[Discord Desktop App:](https://github.com/osuyuanqi/CS565/blob/master/565HW2_HeuEval.pdf) Heuristic Evaluation redesign practice
+[Discord Desktop App (redesign practice):](https://github.com/osuyuanqi/CS565/blob/master/565HW2_HeuEval.pdf) Heuristic Evaluation
 
 [Persona:](https://github.com/osuyuanqi/CS565/blob/master/Persona.pdf) Figma
 
-[AllTrails Route Optimization](https://github.com/osuyuanqi/CS565/blob/master/Project%207.%20FInal%20Report.pdf)
+[AllTrails Route Optimization (redisign practice)](https://github.com/osuyuanqi/CS565/blob/master/Project%207.%20FInal%20Report.pdf)
 
 ### Software Developer skills
 
