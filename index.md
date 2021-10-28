@@ -1,6 +1,6 @@
 # Yuanqi's blog
 
-[project showing](/project_intv.md)<span style='color:#ff0000'>(for interviewers)</span>
+[The project show](/project_intv.md)<span style='color:#ff0000'>(for interviewers)</span>
 
 [C++_tips](/C++_tips.md)
 
