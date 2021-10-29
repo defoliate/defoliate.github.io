@@ -6,7 +6,7 @@ The projects below shows the MAJOR programming language I used only.
 
 [WAP:](https://mo.sci99.com) jQuery, Javascript, CSS/HTML, Git
 
-[CourseSelection:](https://github.com/osuyuanqi/CS565/blob/master/courseVueEdi.html) Vue, jQuery, Javascript, CSS/HTML, Git
+[CourseSelection:](https://github.com/osuyuanqi/CS565/tree/master/JS%20practice) Vue, jQuery, Javascript, CSS/HTML, Git
 
 [Zhuochuang Agriculture:](https://bit.ly/3osi9tc) C#/XAML, Git
 
