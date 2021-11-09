@@ -108,9 +108,15 @@ e.g. .\system32\cmd.exe
 
 4. 3个十分经典的科学计算扩展 库:NumPy、Pandas和 Matplotlib,它们分别为Python语言提供了快速数组处理、数值运算 以及绘图功能。
 
-5. python不支持的数据类型是char 、byte类型。python的数据类型有：数字(int)、浮点(float)、字符串(str)，列表(list)、元组(tuple)、字典(dict)、集合(set)
-
 **tip10: @staticmethod->build-in method**
 
-There's also a default [self](https://stackoverflow.com/questions/23944657/typeerror-method-takes-1-positional-argument-but-2-were-given) in each class function
+There's also a default [self] parameter (https://stackoverflow.com/questions/23944657/typeerror-method-takes-1-positional-argument-but-2-were-given) in each class function
+
+**tip11: dataType and operations**
+
+datatype->int, float, bool, str, list, tuple, set, dict
+
+print(5/2) #2.5->important!
+
+print(5//2) #2
 
