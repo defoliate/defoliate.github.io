@@ -1,8 +1,10 @@
+## Python basics
+
 **why so many programming languages?**
 
 different usage, it also involves.
 
-**Python basics**
+**format and str->immutable**
 
 ```python
  # f->format the content
@@ -16,3 +18,4 @@ b=a.replace("be","me")
 print(b)
 print(a)
 ```
+**comment only when necessary**
