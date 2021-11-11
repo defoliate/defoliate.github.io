@@ -19,3 +19,5 @@ print(b)
 print(a)
 ```
 **comment only when necessary**
+
+**list->order,dict->random**
