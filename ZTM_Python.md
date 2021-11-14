@@ -20,4 +20,18 @@ print(a)
 ```
 **comment only when necessary**
 
-**list->order,dict->random**
+**list->order, can be change, dict->random, string/int->can't be changed**
+
+```Python
+# TypeError: unhashable type: 'list'
+my_list = [
+  {
+  "a" : [1,2,3],
+  123:"bb",
+  True:2,
+  [1,2]:True
+}
+]
+print(my_list[0][0])
+```
+
