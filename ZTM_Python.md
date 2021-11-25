@@ -81,4 +81,23 @@ for items in some_list:
     if items not in duplicate:
       duplicate.append(items)
 print(duplicate)
+
+# @staticmethod->only static,@classmethod->must follow with the keyword cls, need use the class attribute
+class Cat:
+    species = 'mammal'
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    @classmethod
+    def addage(cls,age1,age2):
+      return cls('Tedd', age1 + age2)
+    
+    @staticmethod
+    def addage2(age1, age2):
+      return age1 + age2
+player1 = Cat("cat1",12)
+player2 = Cat("cat2",22)
+player3 = Cat.addage(10,11)
+print(player3.name,player3.age)
+print(player1.addage2(11,19))
 ```
