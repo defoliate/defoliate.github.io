@@ -101,4 +101,7 @@ player3 = Cat.addage(10,11)
 print(player3.name,player3.age)
 print(player1.addage2(11,19))
 ```
+
+**OOP: encapsulation->meaningful; abstraction->blueprint; Inheritance->simple,not duplicate; polymorphism->multi form,same method->different needs**
+
 **all class is public; private->no, but \_; \__->can't modify**
