@@ -101,3 +101,4 @@ player3 = Cat.addage(10,11)
 print(player3.name,player3.age)
 print(player1.addage2(11,19))
 ```
+**all class is public; private->no, but \_; \__->can't modify**
