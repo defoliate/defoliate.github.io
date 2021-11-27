@@ -1,6 +1,7 @@
 ## Python exercise
 
 <details>
+  
   <summary>ex1: generate random 8 passcode</summary>
   
 ```python
@@ -14,9 +15,11 @@ b = random.sample(a,8)
 c = ''.join(b)
 print(c)
 ```
+
 </details>
 
 <details>
+  
   <summary>ex2: binary search</summary>
 
 refer to [binary search](https://www.geeksforgeeks.org/binary-search/)
