@@ -5,7 +5,7 @@
 
 # CLICK ME
 </summary>
-<p>
+<p markdown="1">
 
 #### yes, even hidden code blocks!
 
