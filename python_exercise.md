@@ -1,9 +1,7 @@
 ## Python exercise
 
-<details>
-  
-  <summary>ex1: generate random 8 passcode</summary>
-  
+**ex1: generate random 8 passcode**
+
 ```python
 import random
 a1 = [chr(i) for i in range(65,91)] # capital A-Z
@@ -16,13 +14,8 @@ c = ''.join(b)
 print(c)
 ```
 
-</details>
+**ex2: binary search, refer to [binary search](https://www.geeksforgeeks.org/binary-search/)**
 
-<details>
-  
-  <summary>ex2: binary search</summary>
-
-refer to [binary search](https://www.geeksforgeeks.org/binary-search/)
 ```python
 def bSearch(arr, left, right, x):
   times = 0
@@ -43,13 +36,9 @@ def bSearch(arr, left, right, x):
 a = [1,2,3,4,5,8] 
 bSearch(a, 0, len(a)-1, 4)#times: 8->3,3->1,4->3
 ```
-</details>
 
+**ex3: decorator usage: pass a whole function object, refer to [args](https://www.geeksforgeeks.org/args-kwargs-python/) and [decorator](https://www.geeksforgeeks.org/decorators-in-python/)**
 
-<details>
-  <summary>ex3: decorator usage: pass a whole function object</summary>
-  
-refer to [args](https://www.geeksforgeeks.org/args-kwargs-python/) and [decorator](https://www.geeksforgeeks.org/decorators-in-python/)
 ```python
 def decorator(func):
   # *args stands for varible parameter without keywords
@@ -86,12 +75,9 @@ print(type(any_func)) # class 'function'
 print('~~~~~~')
 print(decorator(any_func())) # return the execute result + a 'function'
 ```
-</details>
 
-<details>
-  <summary>ex4: fib->recursive+dic</summary>
-  
-refer to [recursive function](https://www.python-course.eu/python3_recursive_functions.php)
+**ex4: fib->recursive+dic, refer to [recursive function](https://www.python-course.eu/python3_recursive_functions.php)**
+
 ```python
 # ordinary method: recursive, lowest
 def fib(n):
@@ -119,11 +105,8 @@ def fibi(n):
 print([fibi(i) for i in range(10)]) # [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 print(fib(9),fibm(9),fibi(9)) # 34 34 34
 ```
-</details>
 
-<details>
-  <summary>ex5: readfile</summary>
-
+**ex5: readfile**
 ```python
 def readfile(filename):
     numlist = []
@@ -135,5 +118,3 @@ def readfile(filename):
     g.close()
     return numlist
 ```
-</details>
-
