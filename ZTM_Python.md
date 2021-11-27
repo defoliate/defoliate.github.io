@@ -105,3 +105,20 @@ print(player1.addage2(11,19))
 **OOP: encapsulation->meaningful; abstraction->blueprint; Inheritance->simple,not duplicate; polymorphism->multi form,same method->different needs**
 
 **all class is public; private->no, but \_; \__->can't modify**
+
+**generators->save memory, are actually iterable; but iterable not always generator**
+
+```python
+# yield->return value and pause the function
+def fnc(num):
+  a,b = 0,1
+  for i in range(num):
+    yield a    
+    a,b = b, a + b
+    print('aaa')
+ 
+for num in fnc(10):
+  print(num)
+  print('bbb')
+```
+
