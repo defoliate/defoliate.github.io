@@ -106,7 +106,7 @@ print(player1.addage2(11,19))
 
 **all class is public; private->no, but \_; \__->can't modify**
 
-**generators->save memory, are actually iterable; but iterable not always generator**
+**generators->save memory, are actually iterable,use yield internal. e.g.range(); but iterable not always generator,e.g.list()**
 
 ```python
 # yield->return value and pause the function
@@ -122,3 +122,8 @@ for num in fnc(10):
   print('bbb')
 ```
 
+**package is a folder in python**
+
+**open files with terminal**
+
+e.g. open -a "sublime text" test.py
