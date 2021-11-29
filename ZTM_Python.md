@@ -127,3 +127,7 @@ for num in fnc(10):
 **open files with terminal**
 
 e.g. open -a "sublime text" test.py
+
+**ML: grab data is the hardest. Data is valuable, big IT companies are valuable because they have data. They can share module but not data.**
+
+**
