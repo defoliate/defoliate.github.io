@@ -128,6 +128,7 @@ for num in fnc(10):
 
 e.g. open -a "sublime text" test.py
 
-**ML: grab data is the hardest. Data is valuable, big IT companies are valuable because they have data. They can share module but not data.**
+**past: input value(human)->scheme function/module(human do)->output(machine).
+now: input&output value(human)->scheme function/module(machine do)**
 
-**
+**ML: grab data is the hardest. Data is valuable, big IT companies are valuable because they have data. They can share module but not data.->make business desicions. So, business companies like ML.**
