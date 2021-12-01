@@ -99,16 +99,7 @@ sys.setrecursionlimit(1500)
 timeit.timeit(stmt="fibi(10)", setup="from tstt import fibi", number = 30)
 ```
 
-**tip9: useful knowledge from <<Python程序设计(陈春晖)>>**
-
-1. Python3中的 字符串是 Unicode字符串而不是字节数组,这是与 Python2的主要差别之一。
-
-2. “.”表示当前路径,在通常情况下可以省略,只有在特殊情况下才不能省略。
-e.g. .\system32\cmd.exe
-
-4. 3个十分经典的科学计算扩展 库:NumPy、Pandas和 Matplotlib,它们分别为Python语言提供了快速数组处理、数值运算 以及绘图功能。
-
-**tip10: @staticmethod->build-in method**
+**tip9: @staticmethod->build-in method**
 
 There's also a default [self] parameter (https://stackoverflow.com/questions/23944657/typeerror-method-takes-1-positional-argument-but-2-were-given) in each class function
 
