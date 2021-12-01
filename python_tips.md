@@ -1,5 +1,9 @@
 ## python tips
 
+Note: dynamic update. 
+
+I got the following tips from internet/books. I'll check them periodically and delete the mastered tips.
+
 **tip1: insert->same index**
 
 ```python
