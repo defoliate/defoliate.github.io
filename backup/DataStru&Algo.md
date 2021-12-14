@@ -6,3 +6,5 @@
   - for steps in order
   - for nested steps
 - Drop Non-dominant terms
+
+**var->can be lift,let->strict, const->not change. [variable diff](https://dev.to/sethusenthil/var-vs-let-vs-const-1cgc)**
