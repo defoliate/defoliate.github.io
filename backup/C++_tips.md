@@ -41,3 +41,28 @@ char name[5] = {'L', 'u', 'c', 'y', '\0'};
 char name[5] = {"Lucy"}; 
 ```
 **delete->deallocates single, delete[] ->[free array](https://stackoverflow.com/questions/2425728/delete-vs-delete-operators-in-c)**
+
+=======
+
+refeer->[memory](https://classes.engr.oregonstate.edu/eecs/winter2020/cs161-020/calendar/lecture15-W20.pdf)
+
+**Reference VS Pointers**
+
+referece->*alians* to some variables,e.g. int& r = s;//has to give value meantime.
+pointers->*address* of some variables, e.g. int* p = &s;//Can be declared, then initialized later
+
+**stack->static, compile time _VS_ heap->dynamic, run time**
+```C++
+//Static
+int *i = NULL, j=2; 
+i=&j;
+
+//Dynamic, use keyword new
+int *i = new int; //Segmentation Fault if didn't set
+*i=2;
+//no delete->memory leak, not set to NULL:dangling pointers
+delete i;
+i = NULL; // set the pointer back to NULL return 0;
+```
+=======
+
