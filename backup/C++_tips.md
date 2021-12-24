@@ -52,6 +52,9 @@ referece->*alians* to some variables,e.g. int& r = s;//has to give value meantim
 pointers->*address* of some variables, e.g. int* p = &s;//Can be declared, then initialized later
 
 **stack->static, compile time _VS_ heap->dynamic, run time**
+
+*Good habit: decide where to delete immediately when use new*
+
 ```C++
 //Static
 int *i = NULL, j=2; 
@@ -74,4 +77,5 @@ int grades[5] = {90, 80, 85, 95, 100};
   cout << "*grades: "    << *grades << endl;
 ```
 =======
+
 
