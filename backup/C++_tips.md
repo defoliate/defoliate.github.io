@@ -65,4 +65,13 @@ delete i;
 i = NULL; // set the pointer back to NULL return 0;
 ```
 =======
+**name of array holds the address of the first item(0th)**
+```C++
+int grades[5] = {90, 80, 85, 95, 100};
+  cout << "grades: "     << grades << endl;//same as &grades[0]
+  cout << "grades[0]: "  << grades[0] << endl;//same as *grades
+  cout << "&grades[0]: " << &grades[0] << endl;
+  cout << "*grades: "    << *grades << endl;
+```
+=======
 
