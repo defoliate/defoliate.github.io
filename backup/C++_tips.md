@@ -9,15 +9,21 @@ int, float, double, short, long, char, bool
 **return nothing**
 
 function main() should return a int in C++, or could be [without return](https://stackoverflow.com/questions/30354097/how-to-printf-a-memory-address-in-c/30354164) 
+
 ```C++
 int main(void) 
 {//return 0;
 }
 ```
+
 **let pionter to NULL is a good habit**
+
 ```C++
+
 int* p = NULL;
+
 ```
+
 **Static and Dynamic memory**
 ```C++
 int main(void){
@@ -34,17 +40,11 @@ delete i;//delete the memory the pointer points to, not the pointer itself
 ```
 **Array: ordered arrangement of similar items**
 
-**C-style string->char end with null**
-```C
-//code are equal below
-char name[5] = {'L', 'u', 'c', 'y', '\0'};
-char name[5] = {"Lucy"}; 
-```
 **delete->deallocates single, delete[] ->[free array](https://stackoverflow.com/questions/2425728/delete-vs-delete-operators-in-c)**
 
 =======
 
-refeer->[memory](https://classes.engr.oregonstate.edu/eecs/winter2020/cs161-020/calendar/lecture15-W20.pdf)
+refer->[memory](https://classes.engr.oregonstate.edu/eecs/winter2020/cs161-020/calendar/lecture15-W20.pdf)
 
 **Reference VS Pointers**
 
@@ -68,7 +68,9 @@ delete i;
 i = NULL; // set the pointer back to NULL return 0;
 ```
 =======
+
 **name of array holds the address of the first item(0th)**
+
 ```C++
 int grades[5] = {90, 80, 85, 95, 100};
   cout << "grades: "     << grades << endl;//same as &grades[0]
@@ -76,6 +78,3 @@ int grades[5] = {90, 80, 85, 95, 100};
   cout << "&grades[0]: " << &grades[0] << endl;
   cout << "*grades: "    << *grades << endl;
 ```
-=======
-
-
