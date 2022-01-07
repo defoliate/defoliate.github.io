@@ -1,3 +1,3 @@
 # osuyuanqi.github.io
 
-Welcome to My Personal Portfolio Website
+Welcome to Yuanqi's Portfolio Website
