@@ -1,6 +1,6 @@
 ## Programming Interview Exposed (4th)
 
-**KNOW YOURSELF**
+#### KNOW YOURSELF
 
 - Do you want long-term or short-term projects? Some programmers crave change, spending a few months at most on each project. If you like short-term projects and don’t mind trav- eling, a gig with a consulting company might make more sense than a more conventional corporate job.
 - Does management interest you? Some coders have a long-term goal to become a manager, but others shiver at the very thought. If management is your goal, you need to develop lead- ership skills and demonstrate that you can manage the human parts of the software devel- opment equation as well as the technical pieces. If management is not your goal, look for companies with good technical career paths, so you’re not forced to manage people to be promoted. (You still need leadership skills to get promoted no matter which career path you choose, but leadership skills are separate from people-management skills.)
@@ -8,7 +8,7 @@
 - Don’t bother with certifications. The authors of this book believe that programming cer- tificates are of limited value because very few such jobs require certification. Additionally, almost none of the programmers at the top employers have formal programming certificates, and these are the people interviewing/evaluating you. Instead of spending time getting one of the certifications, we suggest working on some of the other recommendations here (side projects, school).
 - Recruiters and hiring committees like to see that you have multiple accomplishments—a pattern of getting things done.
 
-**The Job Application Process**
+#### The Job Application Process
 
 - The first step to getting a job is to find and make contact with companies you’re interested in working for. Although referrals are the best way to land a job, you can also work with head- hunters or contact a company directly.
 - Small companies
@@ -27,12 +27,12 @@
   - Remember that the best time to get more money is before you accept the job. When you’re an employee, the company holds the power and salary increases are typically much smaller and harder to come by.
 - When an offer is made, don’t accept it immediately. Give yourself time to consider it. Look over the offer, and try to negotiate a better deal because most offers aren’t fixed in stone, no matter what the recruiter says. After accepting a job offer, be sure to contact anyone else who has made you an offer to thank them for their interest in you.
 
-**Phone Screens by Software Engineers**
+#### Phone Screens by Software Engineers
 
   - For example, it’s not uncom- mon for candidates to claim proficiency in every programming language they’ve ever used, even those used only once for a school assignment.
   - Don’t be surprised or offended by the apparent simplicity of some of the questions. Remember, they’re designed to quickly weed out the exaggerators and liars.
 
-**Approaches to Programming Problems**
+#### Approaches to Programming Problems
 
   - Coding questions are the heart of the process that most computer and software companies use to decide who to hire. How a candidate performs during the programming interviews is the main determinant of whether an offer is made.
   - The programming questions are generally difficult. If everyone (or even most people) answered a particular question quickly, companies would stop asking it because it wouldn’t tell them anything about the applicants. Many of the questions are designed to take up to an hour to solve, so don’t get frustrated if you don’t see the answer right away. It’s not unusual for each interviewer to explore just a single question.
@@ -45,6 +45,6 @@
     - Try an example, and check all error and special cases.
   - One sign that you may be off track is if you find yourself writing too much code. Almost all interview coding questions have short answers. You rarely need to write more than 30 lines of code and almost never more than 50. If you start writing a lot of code, you may be heading in the wrong direction.
 
-**Linked Lists**
+#### Linked Lists
 
   - The simplicity of linked list questions appeals to interviewers who want to present at least two or three problems over the course of a 1-hour interview, because they must give you problems that you can be reasonably expected to solve in only 20 to 30 minutes. You can write a rela- tively complete implementation of a linked list in less than 10 minutes, leaving you plenty of time to solve the problem. In contrast, it might take you most of the interview period to imple- ment a more complex data structure such as a hash table. 
