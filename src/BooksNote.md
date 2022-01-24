@@ -40,3 +40,5 @@
     - Make sure you check your code for all error and special cases, especially boundary condi- tions. 
     - Try an example, and check all error and special cases.
   - One sign that you may be off track is if you find yourself writing too much code. Almost all interview coding questions have short answers. You rarely need to write more than 30 lines of code and almost never more than 50. If you start writing a lot of code, you may be heading in the wrong direction.
+- Linked Lists
+  - The simplicity of linked list questions appeals to interviewers who want to present at least two or three problems over the course of a 1-hour interview, because they must give you problems that you can be reasonably expected to solve in only 20 to 30 minutes. You can write a rela- tively complete implementation of a linked list in less than 10 minutes, leaving you plenty of time to solve the problem. In contrast, it might take you most of the interview period to imple- ment a more complex data structure such as a hash table. 
