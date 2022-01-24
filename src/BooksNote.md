@@ -36,3 +36,7 @@
   - Generally, you are asked to write a function or method, but sometimes you need to write a class definition or a sequence of related code modules. In any case, you write code, either in an actual programming language or in some form of pseudocode. (The closer you can get to actual working code, the better.)
   - Interactivity Is Key.
     - Keep talking! Always explain what you are doing. Otherwise, the inter- viewer has no way of knowing how you tackle complex programming problems.
+    - Explain what you are doing to your interviewer before and while coding the solution. Keep talking!
+    - Make sure you check your code for all error and special cases, especially boundary condi- tions. 
+    - Try an example, and check all error and special cases.
+  - One sign that you may be off track is if you find yourself writing too much code. Almost all interview coding questions have short answers. You rarely need to write more than 30 lines of code and almost never more than 50. If you start writing a lot of code, you may be heading in the wrong direction.
