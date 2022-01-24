@@ -48,3 +48,4 @@
 #### Linked Lists
 
   - The simplicity of linked list questions appeals to interviewers who want to present at least two or three problems over the course of a 1-hour interview, because they must give you problems that you can be reasonably expected to solve in only 20 to 30 minutes. You can write a rela- tively complete implementation of a linked list in less than 10 minutes, leaving you plenty of time to solve the problem. In contrast, it might take you most of the interview period to imple- ment a more complex data structure such as a hash table. 
+  - When interviewers say “linked list” they generally mean a linear singly linked list.
