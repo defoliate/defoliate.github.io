@@ -44,6 +44,7 @@
     - Make sure you check your code for all error and special cases, especially boundary conditions. 
     - Try an example, and check all error and special cases.
   - One sign that you may be off track is if you find yourself writing too much code. Almost all interview coding questions have short answers. You rarely need to write more than 30 lines of code and almost never more than 50. If you start writing a lot of code, you may be heading in the wrong direction.
+  - If asked to comment on the performance of a solution, a Big-O runtime analysis is usually sufficient. Algorithms that run in constant, logarithmic, linear, or quasilinear time are preferred. You should also be prepared to comment on the memory footprint of an algorithm.
 
 #### Linked Lists
 
@@ -51,3 +52,5 @@
   - When interviewers say “linked list” they generally mean a linear singly linked list.
 
 ## Don’t lose faith and trust your preparation
+
+#### 
