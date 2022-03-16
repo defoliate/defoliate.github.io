@@ -1,0 +1,64 @@
+{
+	"courses": [
+		{
+			"code": "C#",
+			"title": "3"
+		},
+		{
+			"code": "C++",
+			"title": "2"
+		},
+		{
+			"code": "Git",
+			"title": "6"
+		},
+		{
+			"code": "HTML5/4",
+			"title": "3"
+		},
+		{
+			"code": "Python",
+			"title": "2"
+		},
+		{
+			"code": "CSS3",
+			"title": "2"
+		},
+		{
+			"code": "JavaScript",
+			"title": "3"
+		},
+		{
+			"code": "Visual Studio",
+			"title": "7"
+		},
+		{
+			"code": "SQL/SQLite",
+			"title": "3"
+		},
+		{
+			"code": "Angular",
+			"title": "1"
+		},
+		{
+			"code": ".NET",
+			"title": "1"
+		},
+		{
+			"code": "jQuery",
+			"title": "3"
+		},
+		{
+			"code": "React",
+			"title": "1"
+		},
+		{
+			"code": "Linux",
+			"title": "3"
+		},
+		{
+			"code": "BootStrap",
+			"title": "1"
+		}
+	]
+}
