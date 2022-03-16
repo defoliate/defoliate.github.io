@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>demo</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<h4 id="header-for-cs565">
+			Programming Language Experience
+		</h4>
+
+		<div id="app">
+			<header id="header-part">
+				<div id="term-part"><input id="myList" placeholder="e.g. type Python">
+				</div>
+			</header>
+			<div class="main-content">
+				<table id="class-list" class="class-list" cellspacing="0" cellpadding="0">
+					<tr id="i1">
+						<th style="padding-right:10px;">Language</th>
+						<th >Year</th>
+					</tr>
+				</table>
+
+			</div>
+			<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+			<script>
+				var dataset;
+		
+		$(document).ready(function(){
+			// analyse json data
+			$.getJSON("ProLan.json", function(data){
+				a=data.courses;
+				dataset=data.courses;
+				console.log(dataset);
+			var str="";
+			var l=data.courses.length;
+			console.log(l);
+			for (var i=0;i<l;i++){
+            	var html = "<tr id='"+i+"'>\
+            	<td>"+data.courses[i].code+"</td>\
+            	<td>"+data.courses[i].title+"</td>\
+            	</tr>";
+            	str+=html;
+            }
+            $("#i1").after(str);
+			$("#myList").on("keyup", function() {
+				var value = $(this).val().toLowerCase();
+				$(".class-list tr").filter(function() {
+					$("#i1").show();
+					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+				});
+			});
+		}).fail(function(){
+			console.log("An error has occurred.");
+		});
+	});
+</script>
+</body>
+</html>
