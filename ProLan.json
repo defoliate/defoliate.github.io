@@ -59,6 +59,19 @@
 		{
 			"code": "BootStrap",
 			"title": "1"
-		}
+		},
+		{
+			"code": "LinkedIn",
+			"title": "https://www.linkedin.com/in/raymondqxyuan"
+		},
+		{
+			"code": "Github Link",
+			"title": "https://osuyuanqi.github.io"
+		},
+		{
+			"code": "Java",
+			"title": "0"
+		},
+		
 	]
 }
