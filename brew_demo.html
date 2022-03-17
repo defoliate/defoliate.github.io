@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+table, th, td {
+  border: 1px solid black;
+}
+tr{
+background-color: green;
+margin: 10px;
+}
+
+#wel{
+  color: red;
+  font-size: 30px;
+}
+</style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <label for="cars">Choose a type:</label>
+
+<select name="type" id="tp">
+  <option value="micro">micro</option>
+  <option value="nano">nano</option>
+  <option value="regional">regional</option>
+  <option value="brewpub">brewpub</option>
+  <option value="large">large</option>
+  <option value="planning">planning</option>
+  <option value="bar">bar</option>
+  <option value="contract">contract</option>
+  <option value="proprietor">proprietor</option>
+  <option value="closed">closed</option>
+</select>
+  <button id = "btn">Go</button>
+
+    <table id ="tb">
+      <tr><td id="wel">Welcome to the rough demo</td></tr>
+    </table>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+  <script type='text/javascript'>
+$(document).ready(function(){
+$('#btn').click(function(){
+  $('#tb').empty();
+  var type= "";
+  var url = "https://api.openbrewerydb.org/breweries?by_type="+$("#tp").val();
+  console.log(url);
+function formatPhoneNumber(phoneNumberString) {
+  var cleaned = ('' + phoneNumberString).replace(/\D/g, '');
+  var match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
+  if (match) {
+    return '(' + match[1] + ') ' + match[2] + '-' + match[3];
+  }
+  return null;
+}
+$.ajax({
+    url: url,
+    headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    type: "GET", /* or type:"GET" or type:"PUT" */
+    dataType: "json",
+    data: {
+    },
+    success: function (result) {
+      // console.log(typeof result,result)
+      var dt = JSON.parse(JSON.stringify(result)) 
+        // console.log(dt.walkscore);
+        console.log(dt.length)
+        var str = "<tr><th>name</th><th>brewery_type</th><th>street</th><th>phone</th><th>website_url</th></tr>";
+        // var str= "";
+        for (var i =0;i<dt.length;i++){
+          str+="<tr><td>"+dt[i].name+"</td><td>"+dt[i].brewery_type+"</td><td>"+dt[i].street+"</td><td>"+formatPhoneNumber(dt[i].phone)+"</td><td>"+dt[i].website_url+"</td></tr>";
+        };
+        console.log(str);
+        $('#tb').append(str);
+      }
+    ,
+    error: function () {
+        console.log("error");
+    }
+});
+});
+});</script>
+  </body>
+</html>
