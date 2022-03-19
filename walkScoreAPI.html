@@ -11,6 +11,8 @@
 	<input id="lat" placeholder="lat" value="">
 	<input id="lon" placeholder="lon">
 	<button id = "btn">Go</button>
+	<div><span>e.g. NE Halsey & 66th,</span><span>45.53360652,</span><span>-122.5961662</span>=>67
+</div>
 	<div id = "score" style="color: red;font-size: 20px;"></div>
 	<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
 	<script type='text/javascript'>
@@ -19,30 +21,22 @@ $('#btn').click(function(){
 var ws_wsid = '785a7d602baf9af94d01dd241df47212';
 	var url = "https://api.walkscore.com/score?format=json&address="+$('#add').val()+"&lat="+$('#lat').val()+"&lon="+$('#lon').val()+"&transit=1&bike=1&wsapikey="+ws_wsid;
 url1="https://api.walkscore.com/score?format=json&address=1119%8th%20Avenue%20Seattle%20WA%2098101&lat=47.6085&lon=-122.3295&transit=1&bike=1&wsapikey="+ws_wsid;
-console.log(url1);
+// console.log(url,url1);
 
-$.ajax({
-    url: url,
-    headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-    },
-    type: "GET", /* or type:"GET" or type:"PUT" */
-    dataType: "json",
-    data: {
-    },
-    success: function (result) {
-    	// console.log(typeof result,result)
-    	var dt = JSON.parse(JSON.stringify(result)) 
-    		console.log(dt.walkscore);
-    		console.log(dt)
-    		$('#score').html(dt.walkscore);
-    	}
-    ,
-    error: function () {
-        console.log("error");
-    }
+var proxy = 'https://cors-anywhere.herokuapp.com/';
+
+// fetch(proxy+url1).then(
+// 	a =>a.json()).then(
+// 	b => $('#score').html(b.walkscore));
+
+// same
+fetch(proxy+url).then(function(a) {
+	return a.json()}).then(function(b){
+		// console.log(b)
+		$('#score').html(b.walkscore);
+	})
 });
 });
-});</script>
+</script>
 </body>
 </html>
