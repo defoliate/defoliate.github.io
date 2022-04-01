@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CS 565 HW 4b</title>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style type="text/css">
+        /* Your CSS goes here. You can change the code below if needed. */
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            background-color:#ddd;
+            height: 100%;
+            margin: 0;
+        }
+
+        #wrap {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 1200px;
+        }
+
+        #header-for-cs565 {
+            background-color: #555555;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 12px;
+        }
+
+        #header-for-cs565 .top {
+            height: 80px;
+            line-height: 80px;
+            padding-left: 20px;
+            background-color: #b85231;
+            color: black;
+            font-size: 36px;
+            font-weight: 550;position: relative;
+        }
+
+        #header-for-cs565 .bottom {
+            height: 35px;
+            line-height: 35px;
+            background-color: black;
+            padding-left: 10px;
+            color: white;
+            font-size: 12px;
+        }
+
+        #app {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            width: 1200px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .left_box .select_box {
+            /*margin-left: 10px;*/
+            width: 630px;
+            /*float: left;*/
+        }
+        .left_box{
+            height: 630px;
+            overflow-y: auto;
+
+        }
+        /*.select_box{
+            position: absolute;
+            background-color: white;
+        }*/
+
+        .left_box select {
+            width: 160px;
+            margin-right: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 6px;
+            height: 24px;
+        }
+
+        .left_box td {
+            border: 1px solid black;
+            height: 60px;
+            text-align: center;
+            font-size: 16px;
+
+        }
+.code-1{
+    width: 100px;
+}
+.title-1{
+    width: 250px;
+}
+.instructor-1{
+    width: 150px;
+}
+.time-1 span{
+border: none;
+}
+td input{
+    width: 30px;
+}
+        .point1 {
+            width: 10px;
+            height: 10px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: black;
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .point2 {
+            width: 10px;
+            height: 10px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: red;
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .select {
+            background-color: rgb(140, 139, 139);
+        }
+
+        .td1 {
+            /*width: 5%;
+            position: relative;*/
+        }
+
+        .td2 {
+            /*width: 20%;*/
+        }
+
+        .td3 {
+            /*width: 25%;*/
+        }
+
+        .td4 {
+            /*width: 25%;*/
+        }
+
+        .td5 {
+            /*width: 25%;*/
+        }
+
+        .right_box {
+            width: 600px;
+            border-left: 3px solid black;
+            position: relative;
+            float: left;
+        }
+
+        .right_box .right_title {
+            line-height: 60px;
+            height: 46px;
+            text-align: center;
+        }
+
+        .right_box tr {
+            height: 25px;
+        }
+
+        .right_box .tr1 {
+            height: 36px;
+        }
+        .tr1 th{
+            width: 100px;
+            border: 1px solid black;
+        }
+
+        /*.right_box tr td:first-child {
+            width: 60px;
+        }*/
+
+        .right_box tr td {
+            border: 1px solid black;
+            width: 102px;
+            /*display: inline-block;*/
+            text-align: center;
+            height: inherit;
+            position: relative;
+        }
+
+        .hour-2{
+            width: 100px;
+/*height: 20px;*/
+/*line-height: 20px;*/
+        }
+        .kecheng {
+            width: 90%;
+            height: 90px;
+            background-color: rgb(140, 139, 139);
+            position: absolute;
+            z-index: 10;
+            top: 5%;
+            left: 5%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .kecheng2 {
+            width: 45%;
+            height: 135px;
+            background-color: rgb(140, 139, 139);
+            position: absolute;
+            z-index: 10;
+            top: 2%;
+            left: 2%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .kecheng3 {
+            width: 45%;
+            height: 135px;
+            background-color: rgb(140, 139, 139);
+            position: absolute;
+            z-index: 10;
+            top: 2%;
+            left: 52%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .kecheng span,.kecheng2 span,.kecheng3 span{
+            font-size: 30px;
+        }
+        .top img {
+            position: absolute;
+            width: auto;
+            height: 80px;
+            right: 0;
+            top: 0;
+        }
+
+        .img1 {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Your HTML goes here. You can change the code below if needed. -->
+    <div id="wrap">
+        <div id="header-for-cs565">
+            <div class="top">Orgon State Univeristy<img src="http://abc.gz-forklift.com/11/1.png" alt=""></div>
+            <div class="bottom">CLASS SEARCH</div>
+        </div>
+
+        <div id="app">
+            <div class="left_box">
+                <div class="select_box">terms:<select>
+                        <option value="1">Spring 2021</option>
+                    </select>Search:<select>
+                        <option value="1">CS</option>
+                    </select></div>
+                <table id="lft_tb" class="left_table" border=0 cellpadding=1 width=600>
+                    <tr class="tr1">
+                        <th class="td1"></span></th>
+                        <th class="td2">Code</th>
+                        <th class="td3">Title</th>
+                        <th class="td4">Instructors</th>
+                        <th class="td5">Times</th>
+                    </tr>
+                    <!-- id= {{index}}  -->
+                     <tr onmouseover="getId(this)" onmouseout="normal(this)" onclick="getId(this)" :id ="course1(index)" v-for="(course,index) in courses">
+                        <td><input type="checkbox"> </td>
+                        <td class="code-1">{{ course.code }}</td>
+                        <td class="title-1">{{ course.title }}</td>
+                        <td class="instructor-1">{{ course.instructor }}</td>
+                        <td class="time-1">
+                            <span v-for="time in course.times">{{ time.day }}</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="right_box"><img class="img1" src="http://abc.gz-forklift.com/11/2.png" alt="">
+                <div class="right_title">Time Table</div>
+                <table  class="right_table" >
+                    <tr class="tr1" >
+                        <!-- <th></th> -->
+                        <th v-for="day in days">{{day}}</th>
+                    </tr>
+                    <tr v-for="hour in hours">
+                        <td class="hour-2">{{hour}}</td>
+                        <td :id ="time1(hour,day)" v-for="day in tbdays"></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    var mydata;
+    var app = new Vue({
+            el: '#app',
+            data: {
+                courses: [],
+                days:[],
+                hours:[],
+                selectedButton: "",
+            },
+
+            beforeMount() {
+                fetch("cs565_hw4c_schedule_data.json")
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log("data", data);
+                        this.courses = data.courses;
+                        mydata=data.courses;
+                        this.days = data.days;
+                        //deal days
+                        this.days=[" "].concat(data.days);
+                        this.tbdays=data.days;
+                        this.hours = data.hours;
+                    })
+            },
+
+            methods: {
+                course1: function (index){
+                    return "course-"+index;
+                },
+                time1: function(index,day){
+                    return "time-m-"+index+"-day-"+day;
+                },
+                clickOneOfTwoButtons: function (letter) {
+                    this.selectedButton = letter;
+                }
+            }
+        });
+    
+    function getId(a)
+    {
+        var id = a.id.substring(7);
+        var a = mydata[id].times;
+        console.log(a)
+        var b="";
+        for(var i=0; i< a.length;i++){
+            // console.log(a[i].day+a[i].hour);
+            b="time-m-"+a[i].hour+"-day-"+a[i].day;
+            console.log(b);
+            var element = document.getElementById(b);
+            element.innerHTML = mydata[id].code;
+            element.style.backgroundColor="red";
+        }
+    }
+    function normal(a){
+        var id = a.id.substring(7);
+        var a = mydata[id].times;
+        // console.log(a)
+        var b="";
+        for(var i=0; i< a.length;i++){
+            // console.log(a[i].day+a[i].hour);
+            b="time-m-"+a[i].hour+"-day-"+a[i].day;
+            // console.log(b);
+            console.log(id);
+            // var nextId = document.getElementById(id);
+            // console.log(nextId)
+            // var c=document.getElementById(id+" input").checked;
+            // console.log(c);
+            var element = document.getElementById(b);
+            element.innerHTML = "";
+            element.style.backgroundColor="white";
+        }
+    }
+
+</script>
+
+</html>

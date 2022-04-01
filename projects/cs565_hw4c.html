@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CS 565 HW 4c</title>
+
+	<style type="text/css">
+		/* Your CSS goes here. You can change the code below if needed. */
+		
+		/*Comment: I made slight changes compared with my original design, e.g. 
+		1.replace the school logo&search bar with font only,instead of using image picture.
+		2.some color changes in the "header part" below.
+		*/
+		html {
+			height: 100%;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		body {
+			/*background-color: #dddddd;*/
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		#wrap {
+			background-color: white;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			width: 1200px;
+		}
+
+		#header-for-cs565 {
+			background-color: #555555;
+			color: #ffffff;
+			font-family: Arial;
+			font-size: 12px;
+			padding: 10px;
+		}
+
+		#app {
+			/*padding: 10px;*/
+		}
+		/*Header part means the top module of this file*/
+		#header-part {
+			width: 1180px;
+			height: 100px;
+			float: left;
+			background-color: #f3f3f3;
+			padding-left:20px;
+			padding-top:20px;
+			padding-bottom:20px;
+		}
+		#OSU-logo{
+			width: 100%;
+			height: 50px;
+			float: left;
+			color: #d4401c;
+			font-size:30px;
+			font-weight: bold;
+			margin-top: 10px;
+		}
+
+		#term-part{
+			float:left;
+			width: 100%;
+			height: 50px;
+		}
+		#term-font{
+			float:left;
+			height: 50px;
+			font-size: 25px;
+			line-height: 50px;
+		}
+		#term-choice{
+			float:left;
+			height: 50px;
+			width: 130px;
+			font-size: 21px;
+			line-height: 50px;
+			margin-left:10px;
+			padding-left:10px;
+			background-color: #fdaa28;
+			border-radius:8px;
+			color:white;
+		}
+		input{
+			float:left;
+			height: 50px;
+			font-size: 21px;
+			line-height: 50px;
+			margin-left:20px;
+			border: none;
+			border-radius:8px;
+		}
+
+		/*class part, it divides into 2 part: left and right.
+		In the code, I define public parts first, named "main-part", then the left and right respectively.*/
+		.main-content{
+			float: left;
+			width: 1180px;
+			margin-left:20px;
+			margin-top: 40px;
+		}
+		
+		tr,td,th{
+			padding: 10px;
+			width: 30px;
+			height: 30px;
+		}
+		th{
+			background-color: #c4c4c4;
+		}
+		td{
+			text-align: center;
+			border-bottom: 3px solid #f6f4f4;
+		}
+		/*when mouse hovering on the table*/
+		.selected{
+			background-color: #f9bdae;
+		}
+		.unselected{
+			background-color: #c4c4c4;
+			width: 20px;
+			height: 20px;
+		}
+		.selected1{
+			background-color: #000000;
+			width: 20px;
+			height: 20px;
+		}
+		tr:hover {
+			/*background-color:#f5f5f5;*/
+			background-color: #f6f4f4;
+		}
+		.class-list tbody { height:500px; overflow-y:scroll; display:block; }
+		table thead { display:block; }
+
+		/*left part, class choice*/
+		.class-list{
+			float: left;
+			width: 650px;
+			/*border: 1px solid #f6f4f4;*/
+		}
+
+		.choose-state{
+			background-color: #f05b35;
+			width: 20px;
+			height: 20px;
+		}
+
+		/*right part, time schedule part*/
+		#right-div{
+			/*float: left;*/
+			/*width: 500px;*/
+			margin-left: 50px;
+			overflow-y: hidden;
+			margin-top: -18px;
+		}
+		#top-time {
+			float: left;
+			width: 100%;
+			color: #c4c4c4;
+		}
+		.time-table{
+			width: 100%;
+			float:left;
+		}
+
+		.time-list{
+			font-size: 20px;
+		}
+		.time-table td{
+			text-align: left;
+			word-wrap: break-word;
+			padding:0px;
+		}
+		#days{
+			width: 100%;
+		}
+		.days-class{
+			width: 16%;
+		}
+		table {table-layout:fixed; width:90px;}/*Setting the table width is important!*/
+		table td {overflow:hidden;}
+		/*one class may occupied two time schedule*/
+		.selected2{
+			background-color: #f6f4f4;
+			border: none;
+		}
+		/*when two classes are the next in schedule*/
+		.preview-class{
+			background-color: #f6f4f4;
+			/*border: 1px solid #f6f4f4;*/
+		}
+		.add-class{
+			/*background-color: #f17c61;*/
+			background-color: #fc0d1b;
+
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- Your HTML goes here. You can change the code below if needed. -->
+	<div id="wrap">
+		<div id="header-for-cs565">
+			CS 565 HW 4c (Name: Qingxiao Yuan)
+		</div>
+
+		<div id="app">
+			<header id="header-part">
+				<div id= "OSU-logo"><span >Oregon State </span><span id="school">University</span></div>
+				<div id="term-part">
+					<div id="term-font">Term</div>
+					<div id="term-choice">Spring 2021</div>
+					<input id="myList" placeholder="Search: CS">
+				</div>
+			</header>
+			<div class="main-content">
+				<table id="class-list" class="class-list" cellspacing="0" cellpadding="0">
+					<tr id="i1"><th>State</th>
+						<th>Code</th>
+						<th>Title</th>
+						<th>Instructor</th>
+						<th>Time</th>
+					</tr>
+				</table>
+
+				<div id="right-div">
+					<div id="top-time">TIMETABLE</div>
+					<table class="time-table" cellspacing="0" cellpadding="0">	
+						<tr id="days"></tr></table></div>
+					</div>
+				</div>
+			</div>
+			<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+			<script>
+				var dataset;
+		// ============================================================
+		// used for control add effect
+		// cb=true stands for checkbox,false stands for the hover state
+		// ============================================================
+		function addEffect(obj,cb){
+			if($("#"+obj.id+" input").is(":checked")) return;
+			b=obj;
+				// operate timetable, target formate:days-M-time-11
+				var t="";
+				var d=dataset[parseInt(obj.id)];
+				if (d==null) return;
+				for(var i=0; i<d.times.length;i++)
+				{
+					$("#days-"+d.times[i].day+"-time-"+d.times[i].hour).append("<span id='days-time-span-"+obj.id+"-"+i+"'>"+(d.code+":"+d.title).substring(0, 10)+".."+"</span><br>");
+					var operateClass = cb? "add-class": "preview-class";
+					console.log("I check="+operateClass);
+					$("#days-"+d.times[i].day+"-time-"+d.times[i].hour+" span"). addClass(operateClass);
+						 // $("#days-T-time-12").html("h");
+						}
+					}
+
+		// ============================================================
+		// used for control delete effect
+		// cb=true stands for checkbox,false stands for the hover state
+		// ============================================================
+
+		function delEffect(obj,cb){
+			if($("#"+obj.id+" input").is(":checked")) return;
+				// console.log("------------");
+				var t="";
+				//checkbox
+				var objId="";
+				if(cb==true){
+					objId=obj.id.substring(2);
+				}
+				else{
+					objId=obj.id;
+				}
+				var d=dataset[parseInt(objId)];
+				if (d==null) return;
+
+				for(var i=0; i<d.times.length;i++)
+				{
+					console.log("2")
+					if(!cb)
+						$("#days-time-span-"+obj.id+"-"+i).remove();
+						// console.log("0")there's a bug here.
+						if(!cb)
+							$("#days-"+d.times[i].day+"-time-"+d.times[i].hour+" br").remove();
+						// console.log("1")
+						// var operateClass == checkbox? add class:preview-class;
+						var operateClass = cb? "add-class": "preview-class";
+						// $("#days-"+d.times[i].day+"-time-"+d.times[i].hour+" span"). removeClass("near-class");
+						// console.log("I've operated")
+						$("#days-"+d.times[i].day+"-time-"+d.times[i].hour+" span"). removeClass(operateClass);
+				// console.log("I remove"+operateClass);
+			}
+		}
+
+		// ============================================================
+		// program begins here
+		// ============================================================
+
+		$(document).ready(function(){
+			// analyse json data
+			$.getJSON("cs565_hw4c_schedule_data.json", function(data){
+				a=data.courses;
+				dataset=data.courses;
+				console.log(dataset);
+			// load class schedule in the right
+			var strDays="<th class='days-class'></th>";
+			for(var i=0; i<data.days.length; i++){
+				strDays+="<th id='"+data.days[i]+"' class='days-class'>"+data.days[i]+"</th>"
+			}
+			console.log(strDays);
+			$("#days").append(strDays);
+
+			var strHours="";
+			for(var i=0; i<data.hours.length; i++){
+				strHours+="<tr><td class='time-list'>"+data.hours[i]+"</td>";
+				var a="";
+				for(var j=0; j<data.days.length; j++){
+					a+="<td id=days-"+data.days[j]+"-time-"+data.hours[i]+">"+"</td>";
+				}
+				strHours+=a+"</tr>"
+			}
+			$(".time-table").append(strHours);
+			// load class list in the left
+			var str="";
+			var l=data.courses.length;
+			console.log(l);
+			for (var i=0;i<l;i++){
+            	// console.log(data.courses[i].code);
+            	var j=0,k="";
+            	for(;j<data.courses[i].times.length;j++){
+            		// console.log(data.courses[i].times[j].day);
+            		k+=data.courses[i].times[j].day;
+            	}
+            	// deal with time duration and put it into time <td>.
+            	var a=parseInt(data.courses[i].times[0].hour)+parseInt(data.courses[i].times[0].duration);
+            	a=k+" "+data.courses[i].times[0].hour+"-"+a;
+            	// dealing finish
+            	var html = "<tr id='"+i+"'><td><input type='checkbox' id=cb"+i+"></td>\
+            	<td>"+data.courses[i].code+"</td>\
+            	<td>"+data.courses[i].title+"</td>\
+            	<td>"+data.courses[i].instructor+"</td>\
+            	<td>"+a+"</td>\
+            	</tr>";
+            	str+=html;
+            }
+            $("#i1").after(str);
+			// b stands for the same tr state.
+			var b;
+			$( ".class-list tr" ).hover(
+				function() {
+					addEffect(this,false);
+				}, function() {
+					delEffect(this,false);
+					if(this.id==null) return;
+					// console.log(($("#"+this.id+" input").id).substring(2))
+
+					if($("#"+this.id+" input").is(":checked")){
+					// console.log(this+" input")
+					$("#"+this.id+"").addClass("add-class");
+					console.log("my id ="+this.id);
+					var objId=this.id;
+
+					var d=dataset[parseInt(objId)];
+					if (d==null) return;
+					for(var i=0; i<d.times.length;i++)
+					{
+						$("#days-"+d.times[i].day+"-time-"+d.times[i].hour+" span"). addClass("add-class");
+					}
+				}
+				else{
+					$("#"+this.id+"").removeClass("add-class");
+				}
+			}
+			);
+			$('.class-list tr input').click(function(e) {
+				if($(this).is(":checked"))
+				{ 
+					// console.log(this)
+					addEffect(this,true);
+				}
+				else
+				{
+					delEffect(this,true);
+				}
+			}
+			);
+			$("#myList").on("keyup", function() {
+				var value = $(this).val().toLowerCase();
+				$(".class-list tr").filter(function() {
+					$("#i1").show();
+					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+				});
+			});
+		}).fail(function(){
+			console.log("An error has occurred.");
+		});
+	});
+</script>
+</body>
+</html>

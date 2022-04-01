@@ -1,0 +1,694 @@
+{
+	"days": ["M", "T", "W", "R", "F"],
+	"hours": [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+	"courses": [
+		{
+			"code": "AEC 532",
+			"title": "ENVIRONMENTAL LAW",
+			"times": [
+				{"day": "T", "hour": 12, "duration": 2},
+				{"day": "R", "hour": 12, "duration": 2}
+			],
+			"instructor": "C. Brekken"
+		},
+		{
+			"code": "AEC 551",
+			"title": "APPLICATIONS OF ENVIRONMENTAL AND NATURAL RESOURCE ECONOMICS",
+			"times": [
+				{"day": "M", "hour": 12, "duration": 2},
+				{"day": "W", "hour": 12, "duration": 2}
+			],
+			"instructor": "W. Jaeger"
+		},
+		{
+			"code": "AEC 599",
+			"title": "SPECIAL TOPICS: ST/BEHAV & EXPERIMENTAL ECON",
+			"times": [
+				{"day": "T", "hour": 10, "duration": 1.5},
+				{"day": "R", "hour": 10, "duration": 1.5}
+			],
+			"instructor": "N. Streletskaya"
+		},
+		{
+			"code": "AEC 612",
+			"title": "ADVANCED MICROECONOMIC THEORY II",
+			"times": [
+				{"day": "T", "hour": 12, "duration": 2},
+				{"day": "R", "hour": 12, "duration": 2}
+			],
+			"instructor": "K. Melesse"
+		},
+		{
+			"code": "AEC 699",
+			"title": "SPECIAL TOPICS: ST/BEHAV & EXPERIMENTAL ECON",
+			"times": [
+				{"day": "T", "hour": 10, "duration": 1.5},
+				{"day": "R", "hour": 10, "duration": 1.5}
+			],
+			"instructor": "N. Streletskaya"
+		},
+		{
+			"code": "ANTH 530",
+			"title": "TOPICS IN ARCHAEOLOGY: T/ARCHAEOLOGICAL FAUNAL ANALYS",
+			"times": [
+				{"day": "T", "hour": 12, "duration": 2},
+				{"day": "R", "hour": 12, "duration": 2}
+			],
+			"instructor": "N. Endacott"
+		},
+		{
+			"code": "ANTH 566",
+			"title": "RURAL ANTHROPOLOGY",
+			"times": [
+				{"day": "M", "hour": 16, "duration": 2},
+				{"day": "W", "hour": 16, "duration": 2}
+			],
+			"instructor": "S. Cunningham"
+		},
+		{
+			"code": "ANTH 574",
+			"title": "CROSS-CULTURAL HEALTH AND HEALING",
+			"times": [
+				{"day": "F", "hour": 10, "duration": 4}
+			],
+			"instructor": "K. Maes"
+		},
+		{
+			"code": "ANTH 580",
+			"title": "TOPICS IN APPLIED ANTHROPOLOGY: ST/SCIENCE, TECHNOLOGY, SOCIET",
+			"times": [
+				{"day": "M", "hour": 14, "duration": 2},
+				{"day": "W", "hour": 14, "duration": 2}
+			],
+			"instructor": "S. Zhang"
+		},
+		{
+			"code": "ANTH 581",
+			"title": "NATURAL RESOURCES AND COMMUNITY VALUES",
+			"times": [
+				{"day": "M", "hour": 12, "duration": 2},
+				{"day": "W", "hour": 12, "duration": 2}
+			],
+			"instructor": "B. Tilt"
+		},
+		{
+			"code": "ANTH 586",
+			"title": "ANTHROPOLOGY OF FOOD",
+			"times": [
+				{"day": "M", "hour": 12, "duration": 2},
+				{"day": "W", "hour": 12, "duration": 2}
+			],
+			"instructor": "J. Gross"
+		},
+		{
+			"code": "ANTH 593",
+			"title": "STATISTICAL APPLICATIONS IN ANTHROPOLOGY",
+			"times": [
+				{"day": "T", "hour": 14, "duration": 2},
+				{"day": "R", "hour": 14, "duration": 2}
+			],
+			"instructor": "A. Gerkey"
+		},
+		{
+			"code": "ANTH 598",
+			"title": "ORAL TRADITIONS",
+			"times": [
+				{"day": "T", "hour": 16, "duration": 2},
+				{"day": "R", "hour": 16, "duration": 2}
+			],
+			"instructor": "J. Gross"
+		},
+		{
+			"code": "COMM 512",
+			"title": "TOPICS IN SPEECH COMMUNICATION: ST/ SPORT REPORTING",
+			"times": [
+				{"day": "W", "hour": 16, "duration": 3}
+			],
+			"instructor": "T. Goodnow"
+		},
+		{
+			"code": "COMM 514",
+			"title": "COMMUNICATION RESEARCH METHODS",
+			"times": [
+				{"day": "T", "hour": 10, "duration": 1.5},
+				{"day": "R", "hour": 10, "duration": 1.5}
+			],
+			"instructor": "Y. Ma"
+		},
+		{
+			"code": "COMM 526",
+			"title": "INTERCULTURAL COMMUNICATION: THEORIES AND ISSUES",
+			"times": [
+				{"day": "T", "hour": 14, "duration": 1.5},
+				{"day": "R", "hour": 14, "duration": 1.5}
+			],
+			"instructor": "E. Root"
+		},
+		{
+			"code": "COMM 566",
+			"title": "ETHICS OF RHETORIC",
+			"times": [
+				{"day": "T", "hour": 16, "duration": 1.5},
+				{"day": "R", "hour": 16, "duration": 1.5}
+			],
+			"instructor": "M. Porrovecchio"
+		},
+		{
+			"code": "CS 517",
+			"title": "THEORY OF COMPUTATION",
+			"times": [
+				{"day": "M", "hour": 14, "duration": 1},
+				{"day": "W", "hour": 14, "duration": 1},
+				{"day": "F", "hour": 14, "duration": 1}
+			],
+			"instructor": "M. Rosulek"
+		},
+		{
+			"code": "CS 531",
+			"title": "ARTIFICIAL INTELLIGENCE",
+			"times": [
+				{"day": "T", "hour": 8, "duration": 2},
+				{"day": "R", "hour": 8, "duration": 2}
+			],
+			"instructor": "P. Tadepalli"
+		},
+		{
+			"code": "CS 533",
+			"title": "INTELLIGENT AGENTS AND DECISION MAKING",
+			"times": [
+				{"day": "M", "hour": 12, "duration": 2},
+				{"day": "W", "hour": 12, "duration": 2}
+			],
+			"instructor": "A. Fern"
+		},
+		{
+			"code": "CS 535",
+			"title": "DEEP LEARNING",
+			"times": [
+				{"day": "T", "hour": 14, "duration": 2},
+				{"day": "R", "hour": 14, "duration": 2}
+			],
+			"instructor": "F. Li"
+		},
+		{
+			"code": "CS 537",
+			"title": "COMPUTER VISION I",
+			"times": [
+				{"day": "T", "hour": 10, "duration": 1.5},
+				{"day": "R", "hour": 10, "duration": 1.5}
+			],
+			"instructor": "S. Todorovic"
+		},
+		{
+			"code": "CS 539",
+			"title": "ST/ARTIFICIAL INTELLIGENCE: ST/ NONLINEAR OPTIMIZATION",
+			"times": [
+				{"day": "M", "hour": 12, "duration": 2},
+				{"day": "W", "hour": 12, "duration": 2}
+			],
+			"instructor": "J. Kim"
+		},
+		{
+			"code": "CS 544",
+			"title": "OPERATING SYSTEMS II",
+			"times": [
+				{"day": "T", "hour": 16, "duration": 1.5},
+				{"day": "R", "hour": 16, "duration": 1.5}
+			],
+			"instructor": "Y. Song"
+		},
+		{
+			"code": "CS 549",
+			"title": "ST/DATA SCIENCE & SYSTEMS: ST/ SCALABLE QUERYING & ML",
+			"times": [
+				{"day": "T", "hour": 16, "duration": 1.5},
+				{"day": "R", "hour": 16, "duration": 1.5}
+			],
+			"instructor": "A. Termehchy"
+		},
+		{
+			"code": "CS 551",
+			"title": "COMPUTER GRAPHICS",
+			"times": [
+				{"day": "W", "hour": 16, "duration": 2},
+				{"day": "F", "hour": 16, "duration": 2}
+			],
+			"instructor": "E. Zhang"
+		},
+		{
+			"code": "CS 565",
+			"title": "HUMAN-COMPUTER INTERACTION",
+			"times": [
+				{"day": "T", "hour": 16, "duration": 2},
+				{"day": "R", "hour": 16, "duration": 2}
+			],
+			"instructor": "M. Kahng"
+		},
+		{
+			"code": "CS 572",
+			"title": "COMPUTER ARCHITECTURE",
+			"times": [
+				{"day": "T", "hour": 12, "duration": 2},
+				{"day": "R", "hour": 12, "duration": 2}
+			],
+			"instructor": "J. Goins"
+		},
+		{
+			"code": "CS 575",
+			"title": "INTRODUCTION TO PARALLEL PROGRAMMING",
+			"times": [
+				{"day": "M", "hour": 12, "duration": 2},
+				{"day": "W", "hour": 12, "duration": 2}
+			],
+			"instructor": "M. Bailey"
+		},
+		{
+			"code": "CS 579",
+			"title": "ST/COMPU ARCH & PARA PROCESS: ST/ CYBER ATTACKS & DEFENSE",
+			"times": [
+				{"day": "T", "hour": 14, "duration": 2},
+				{"day": "R", "hour": 14, "duration": 2}
+			],
+			"instructor": "Y. Jang"
+		},
+		{
+			"code": "CS 583",
+			"title": "ADVANCED FUNCTIONAL PROGRAMMING",
+			"times": [
+				{"day": "T", "hour": 10, "duration": 2},
+				{"day": "R", "hour": 10, "duration": 2}
+			],
+			"instructor": "E. Walkingshaw"
+		},
+		{
+			"code": "CS 599",
+			"title": "SPECIAL TOPICS: ST/ QUANTUM COMPUTING",
+			"times": [
+				{"day": "T", "hour": 12, "duration": 1.5},
+				{"day": "R", "hour": 12, "duration": 1.5}
+			],
+			"instructor": "B. Bose"
+		},
+		{
+			"code": "CS 599",
+			"title": "SPECIAL TOPICS: ST/VIRTUAL & AUGMENTED REALITY",
+			"times": [
+				{"day": "M", "hour": 9, "duration": 1},
+				{"day": "F", "hour": 9, "duration": 1}
+			],
+			"instructor": "R. De Amicis"
+		},
+		{
+			"code": "ECE 518",
+			"title": "SEMICONDUCTOR PROCESSING",
+			"times": [			
+				{"day": "W", "hour": 16, "duration": 2},
+				{"day": "F", "hour": 16, "duration": 2}
+			],
+			"instructor": "J. Labram"
+		},
+		{
+			"code": "ECE 520",
+			"title": "ANALOG CMOS INTEGRATED CIRCUITS",
+			"times": [
+				{"day": "T", "hour": 16, "duration": 2},
+				{"day": "R", "hour": 16, "duration": 2}
+			],
+			"instructor": "A. Natarajan"
+		},
+		{
+			"code": "ECE 532",
+			"title": "DYNAMICS OF ELECTROMECHANICAL ENERGY CONVERSION",
+			"times": [
+				{"day": "T", "hour": 12, "duration": 1.5},
+				{"day": "R", "hour": 12, "duration": 1.5}
+			],
+			"instructor": "T. Brekken"
+		},
+		{
+			"code": "ECE 535",
+			"title": "ADJUSTABLE SPEED DRIVES AND MOTION CONTROL",
+			"times": [
+				{"day": "T", "hour": 14, "duration": 1.5},
+				{"day": "R", "hour": 14, "duration": 1.5}
+			],
+			"instructor": "Y. Cao"
+		},
+		{
+			"code": "ECE 537",
+			"title": "SMART GRID",
+			"times": [
+				{"day": "T", "hour": 10, "duration": 1.5},
+				{"day": "R", "hour": 10, "duration": 1.5}
+			],
+			"instructor": "E. Cotilla-Sanchez"
+		},
+		{
+			"code": "ECE 572",
+			"title": "COMPUTER ARCHITECTURE",
+			"times": [
+				{"day": "T", "hour": 12, "duration": 2},
+				{"day": "R", "hour": 12, "duration": 2}
+			],
+			"instructor": "J. Goins"
+		},
+		{
+			"code": "ECE 574",
+			"title": "VLSI SYSTEM DESIGN",
+			"times": [
+				{"day": "T", "hour": 12, "duration": 2},
+				{"day": "R", "hour": 12, "duration": 2}
+			],
+			"instructor": "H. Abbas"
+		},
+		{
+			"code": "ECE 577",
+			"title": "MULTIMEDIA SYSTEMS",
+			"times": [
+				{"day": "M", "hour": 14, "duration": 2},
+				{"day": "W", "hour": 14, "duration": 2}
+			],
+			"instructor": "B. Lee"
+		},
+		{
+			"code": "ECE 583",
+			"title": "GUIDED WAVE OPTICS",
+			"times": [
+				{"day": "M", "hour": 14, "duration": 1.5},
+				{"day": "W", "hour": 14, "duration": 1.5}
+			],
+			"instructor": "A. Wang"
+		},
+		{
+			"code": "ECE 585",
+			"title": "MICROWAVE DESIGN TECHNIQUES",
+			"times": [
+				{"day": "T", "hour": 14, "duration": 1.5},
+				{"day": "R", "hour": 14, "duration": 1.5}
+			],
+			"instructor": "A. Weisshaar"
+		},
+		{
+			"code": "ECE 599",
+			"title": "SPECIAL TOPICS: ST/ NONLINEAR OPTIMIZATION",
+			"times": [
+				{"day": "M", "hour": 12, "duration": 2},
+				{"day": "W", "hour": 12, "duration": 2}
+			],
+			"instructor": "J. Kim"
+		},
+		{
+			"code": "ECE 599",
+			"title": "SPECIAL TOPICS: ST/ PHASE LOCKED LOOPS",
+			"times": [
+				{"day": "T", "hour": 10, "duration": 1.5},
+				{"day": "R", "hour": 10, "duration": 1.5}
+			],
+			"instructor": "T. Anand"
+		},
+		{
+			"code": "ECE 599",
+			"title": "SPECIAL TOPICS: ST/ QUANTUM COMPUTING",
+			"times": [
+				{"day": "T", "hour": 12, "duration": 1.5},
+				{"day": "R", "hour": 12, "duration": 1.5}
+			],
+			"instructor": "B. Bose"
+		},
+		{
+			"code": "ECE 616",
+			"title": "SEMICONDUCTOR DEVICES II",
+			"times": [
+				{"day": "T", "hour": 10, "duration": 1.5},
+				{"day": "R", "hour": 10, "duration": 1.5}
+			],
+			"instructor": "L. Cheng"
+		},
+		{
+			"code": "ECE 627",
+			"title": "OVERSAMPLED DELTA-SIGMA DATA CONVERTERS",
+			"times": [
+				{"day": "M", "hour": 15, "duration": 1},
+				{"day": "W", "hour": 15, "duration": 1},
+				{"day": "F", "hour": 15, "duration": 1}
+			],
+			"instructor": "G. Temes"
+		},
+		{
+			"code": "ECE 669",
+			"title": "ST/COMMS & SIGNAL PROCESS: ST/ ADVANCED COMMUNICATIONS",
+			"times": [
+				{"day": "T", "hour": 12, "duration": 1.5},
+				{"day": "R", "hour": 12, "duration": 1.5}
+			],
+			"instructor": "H. Liu"
+		},
+		{
+			"code": "ECON 524",
+			"title": "INTRODUCTION TO ECONOMETRICS",
+			"times": [
+				{"day": "M", "hour": 12, "duration": 2},
+				{"day": "W", "hour": 12, "duration": 1}
+			],
+			"instructor": "M. Jerman"
+		},
+		{
+			"code": "ECON 541",
+			"title": "INTERNATIONAL FINANCE THEORY AND POLICY",
+			"times": [
+				{"day": "M", "hour": 14, "duration": 2},
+				{"day": "W", "hour": 14, "duration": 2}
+			],
+			"instructor": "Q. Meng"
+		},
+		{
+			"code": "ECON 562",
+			"title": "MANAGERIAL ECONOMICS",
+			"times": [
+				{"day": "M", "hour": 12, "duration": 2},
+				{"day": "W", "hour": 12, "duration": 2}
+			],
+			"instructor": "P. Emerson"
+		},
+		{
+			"code": "ME 512",
+			"title": "DESIGN OF MECHANISMS",
+			"times": [
+				{"day": "T", "hour": 14, "duration": 1.5},
+				{"day": "R", "hour": 14, "duration": 1.5}
+			],
+			"instructor": "M. Campbell"
+		},
+		{
+			"code": "ME 516",
+			"title": "MODELING AND ANALYSIS OF COMPLEX SYSTEMS",
+			"times": [
+				{"day": "T", "hour": 16, "duration": 2},
+				{"day": "R", "hour": 16, "duration": 2}
+			],
+			"instructor": "A. Dong"
+		},
+		{
+			"code": "ME 531",
+			"title": "LINEAR MULTIVARIABLE CONTROL SYSTEMS I",
+			"times": [
+				{"day": "M", "hour": 12, "duration": 2},
+				{"day": "W", "hour": 12, "duration": 2}
+			],
+			"instructor": "J. Davidson"
+		},
+		{
+			"code": "ME 540",
+			"title": "INTERMEDIATE THERMODYNAMICS",
+			"times": [
+				{"day": "W", "hour": 8, "duration": 2},
+				{"day": "F", "hour": 8, "duration": 2}
+			],
+			"instructor": "B. Fronk"
+		},
+		{
+			"code": "ME 545",
+			"title": "INTRODUCTION TO COMBUSTION",
+			"times": [
+				{"day": "M", "hour": 12, "duration": 2},
+				{"day": "W", "hour": 12, "duration": 2}
+			],
+			"instructor": "D. Blunck"
+		},
+		{
+			"code": "ME 553",
+			"title": "STRUCTURE AND MECHANICS LABORATORY",
+			"times": [
+				{"day": "M", "hour": 11, "duration": 1},
+				{"day": "W", "hour": 11, "duration": 1}
+			],
+			"instructor": "B. Bay"
+		},
+		{
+			"code": "ME 567",
+			"title": "ENGINEERING APPLICATIONS OF COMPUTATIONAL FLUID DYNAMICS",
+			"times": [
+				{"day": "T", "hour": 12, "duration": 2},
+				{"day": "R", "hour": 12, "duration": 2}
+			],
+			"instructor": "D. Pence"
+		},
+		{
+			"code": "ME 599",
+			"title": "SPECIAL TOPICS: ST/ DESIGN FOR MANUFACTURE",
+			"times": [
+				{"day": "M", "hour": 12, "duration": 2},
+				{"day": "W", "hour": 12, "duration": 2}
+			],
+			"instructor": "B. DuPont"
+		},
+		{
+			"code": "ME 599",
+			"title": "SPECIAL TOPICS: ST/RENEWABLE ENERGY:THRM FS",
+			"times": [
+				{"day": "T", "hour": 12, "duration": 2},
+				{"day": "R", "hour": 12, "duration": 2}
+			],
+			"instructor": "B. Abbasi"
+		},
+		{
+			"code": "ME 615",
+			"title": "DESIGN UNDER UNCERTAINTY",
+			"times": [
+				{"day": "M", "hour": 12, "duration": 2},
+				{"day": "W", "hour": 12, "duration": 2}
+			],
+			"instructor": "C. Hoyle"
+		},
+		{
+			"code": "PHL 511",
+			"title": "GREAT FIGURES IN PHILOSOPHY: GREAT FIGURES: WITTGENSTEIN",
+			"times": [
+				{"day": "T", "hour": 14, "duration": 2},
+				{"day": "R", "hour": 14, "duration": 2}
+			],
+			"instructor": "J. Kaplan"
+		},
+		{
+			"code": "PHL 525",
+			"title": "PHILOSOPHICAL METHODS",
+			"times": [
+				{"day": "M", "hour": 16, "duration": 2},
+				{"day": "W", "hour": 16, "duration": 2}
+			],
+			"instructor": "A. Thompson"
+		},
+		{
+			"code": "PHL 531",
+			"title": "BUDDHISM, NON-VIOLENCE, AND SOCIAL JUSTICE",
+			"times": [
+				{"day": "T", "hour": 10, "duration": 2},
+				{"day": "R", "hour": 10, "duration": 2}
+			],
+			"instructor": "G. Barstow"
+		},
+		{
+			"code": "PHL 543",
+			"title": "WORLD VIEWS AND ENVIRONMENTAL VALUES",
+			"times": [
+				{"day": "M", "hour": 16, "duration": 1.5},
+				{"day": "W", "hour": 16, "duration": 1.5}
+			],
+			"instructor": "B. Vogt"
+		},
+		{
+			"code": "PHL 544",
+			"title": "BIOMEDICAL ETHICS",
+			"times": [
+				{"day": "M", "hour": 16, "duration": 2},
+				{"day": "W", "hour": 16, "duration": 2}
+			],
+			"instructor": "C. Campbell"
+		},
+		{
+			"code": "PHL 547",
+			"title": "RESEARCH ETHICS",
+			"times": [
+				{"day": "R", "hour": 16, "duration": 3}
+			],
+			"instructor": "Y. Kong"
+		},
+		{
+			"code": "ST 512",
+			"title": "METHODS OF DATA ANALYSIS",
+			"times": [
+				{"day": "M", "hour": 13, "duration": 1},
+				{"day": "W", "hour": 13, "duration": 1},
+				{"day": "F", "hour": 13, "duration": 1}
+			],
+			"instructor": "C. Fuentes"
+		},
+		{
+			"code": "ST 513",
+			"title": "METHODS OF DATA ANALYSIS",
+			"times": [
+				{"day": "M", "hour": 10, "duration": 1},
+				{"day": "W", "hour": 10, "duration": 1},
+				{"day": "F", "hour": 10, "duration": 1}
+			],
+			"instructor": "J. Molyneux"
+		},
+		{
+			"code": "ST 515",
+			"title": "DESIGN & ANL PLANNED EXPERIMEN: DESIGN & ANL OF PLANNED EXPER",
+			"times": [
+				{"day": "M", "hour": 14, "duration": 1},
+				{"day": "W", "hour": 14, "duration": 1},
+				{"day": "F", "hour": 14, "duration": 1}
+			],
+			"instructor": "Y. Di"
+		},
+		{
+			"code": "ST 543",
+			"title": "APPLIED STOCHASTIC MODELS",
+			"times": [
+				{"day": "M", "hour": 14, "duration": 1},
+				{"day": "W", "hour": 14, "duration": 1},
+				{"day": "F", "hour": 14, "duration": 1}
+			],
+			"instructor": "J. Rojo"
+		},
+		{
+			"code": "ST 553",
+			"title": "STATISTICAL METHODS",
+			"times": [
+				{"day": "M", "hour": 11, "duration": 1},
+				{"day": "W", "hour": 11, "duration": 1},
+				{"day": "F", "hour": 11, "duration": 1}
+			],
+			"instructor": "L. Madsen"
+		},
+		{
+			"code": "ST 559",
+			"title": "BAYESIAN STATISTICS",
+			"times": [
+				{"day": "T", "hour": 10, "duration": 1.5},
+				{"day": "R", "hour": 10, "duration": 1.5}
+			],
+			"instructor": "D. Mondal"
+		},
+		{
+			"code": "ST 563",
+			"title": "THEORY OF STATISTICS",
+			"times": [
+				{"day": "T", "hour": 14, "duration": 1.5},
+				{"day": "R", "hour": 14, "duration": 1.5}
+			],
+			"instructor": "S. Emerson"
+		},
+		{
+			"code": "ST 662",
+			"title": "ADVANCED THEORY OF STATISTICS",
+			"times": [
+				{"day": "T", "hour": 16, "duration": 1.5},
+				{"day": "R", "hour": 16, "duration": 1.5}
+			],
+			"instructor": "L. Xue"
+		}
+	]
+}
