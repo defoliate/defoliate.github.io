@@ -1,0 +1,9 @@
+#prof_img{
+	transition: all 1s;
+
+}
+
+#prof_img:hover{
+	transform: scale(1.1);
+
+}
